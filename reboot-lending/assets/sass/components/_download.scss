@@ -1,0 +1,210 @@
+/*================
+    DOWNLOAD    
+================*/
+.download {
+    overflow: hidden;
+    &__fun-fact {
+        position: relative;
+        width: 450px;
+        height: 450px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        z-index: 1;
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        h3 {
+            font-size: 35px;
+        }
+        @include respond(mini-phone) {
+            width: 330px;
+            height: 330px;
+            h3 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+        &-4 {
+            background-color: $color-primary;
+            padding: 10px;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: $color-light;
+            h3 {
+                font-size: 35px;
+                color: $color-light;
+            }
+            @include respond(mini-phone) {
+                display: none;
+            }
+        }
+        &__item {
+            display: inline-block;
+            background-color: $color-primary;
+            padding: 16px 0;
+            min-width: 180px;
+            &-1 {
+                text-align: center;
+                position: absolute;
+                top: -40px;
+                left: 50%;
+                transform: translateX(-50%);
+                display: inline-block;
+                padding: 10px 20px;
+                background-color:$color-light;
+                border-radius: 10px;
+            }
+            &-2 {
+                position: absolute;
+                left: -30px;
+                bottom: 80px;
+                padding: 10px;
+                background-color: $color-light;
+                border-radius: 10px;
+            }
+            &-3 {
+                position: absolute;
+                right: -30px;
+                bottom: 80px;
+                padding: 10px;
+                background-color: $color-light;
+                border-radius: 10px;
+            }
+        }
+        &::after {
+            position: absolute;
+            height: 450px;
+            width: 450px;
+            content: '';
+            border: 1px dashed $color-primary;
+            left: 0;
+            top: 0;
+            border-radius: 50%;
+            z-index: -1;
+            animation: rotate-animation 30s infinite linear;
+            @include respond(mini-phone) {
+                width: 330px;
+                height: 330px;
+            }
+            @include respond(extraMini) {
+                width: 250px;
+                height: 250px;
+            }
+        }
+
+    }
+    &__button {
+        @include respond(laptop) {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+        @include respond(mini-phone) {
+            display: block;
+            button {
+                width: 100%;
+                margin-bottom: 15px;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+    &__image {
+        &-1 {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            .btn__primary {
+                position: absolute;
+                bottom: 20px;
+                padding: 5px 20px;
+                font-size: 14px;
+            }
+            .icon {
+                position: absolute;
+                top: 20px;
+                left: -20px;
+                width: 55px;
+                height: 55px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                background-color: $color-primary;
+                color: $color-light;
+                font-size: 20px;
+                @include respond(mini) {
+                    left: auto;
+                    right: auto;
+                }
+            }
+        }
+        &-2 {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            .btn__primary {
+                position: absolute;
+                bottom: 20px;
+                padding: 5px 20px;
+                font-size: 14px;
+            }
+            .icon {
+                position: absolute;
+                top: 20px;
+                left: -20px;
+                width: 55px;
+                height: 55px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                background-color: $color-primary;
+                color: $color-light;
+                font-size: 20px;
+                @include respond(extraMini) {
+                    left: auto;
+                    right: auto;
+                }
+            }
+        }
+    }
+}
+
+///// DARK VERSION /////
+.theme-dark {
+    .download {
+        background-color: $color-secondary;
+        &__fun-fact {
+            color: $color-secondary;
+            h3 {
+                color: $color-secondary;
+            }
+            &-4 {
+                h3 {
+                    color: $color-light;
+                }
+            }
+        }
+        &__image-1,
+        &__image-2 {
+            .btn__primary {
+                &::before {
+                    background: $color-secondary;
+                }
+                span {
+                    color: $color-light;
+                }
+            }
+        }
+    }
+}

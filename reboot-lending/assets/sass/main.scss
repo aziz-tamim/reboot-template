@@ -1,0 +1,30 @@
+@import './abstracts/variables';
+@import './abstracts/mixins';
+@import './abstracts/animation';
+
+@import './base/typography';
+@import './base/base';
+
+@import './components/header';
+@import './components/hero';
+@import './components/about';
+@import './components/cta';
+@import './components/services';
+@import './components/overview';
+@import './components/why-us';
+@import './components/what-we-do';
+@import './components/faq';
+@import './components/team';
+@import './components/pricing';
+@import './components/testimonial';
+@import './components/blog';
+@import './components/platforms';
+@import './components/fun-fact';
+@import './components/download';
+@import './components/portfolio';
+@import './components/contact';
+@import './components/screenshot';
+@import './components/footer';
+
+@import './pages/all-blog';
+@import './pages/blog-details';

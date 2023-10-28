@@ -1,0 +1,99 @@
+/*===============
+    FAQ
+===============*/
+.faq {
+    &__image {
+        position: relative;
+        img {
+            border-radius: 10px;
+            z-index: 2;
+        }
+    }
+    .faqs-accordion {
+        .accordion-item {
+            border-bottom: none;
+            margin-bottom: 12px;
+            border-radius: 6px;
+            box-shadow: 2px 0px 15px 5px $color-shadow;
+            overflow: hidden;
+            .accordion-header {
+                .accordion-button {
+                    border-top-left-radius: 6px;
+                    border-top-right-radius: 6px;
+                    box-shadow: none !important;
+                    color: $color-secondary;
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: $color-secondary;
+
+                    &.collapsed {
+                        border-radius: 6px;
+                        color: $color-secondary;
+                        &:before {
+                            color: $color-secondary;
+                            transform: rotate(0deg);
+                        }
+                    }
+                    &:focus {
+                        box-shadow: none;
+                    }
+                    &:after {
+                        display: none;
+                    }
+                    &::before {
+                        content: '\eab2';
+                        display: inline-block;
+                        font: normal normal normal 24px/1 IcoFont;
+                        font-size: 22px;
+                        color: $color-light;
+                        position: absolute;
+                        right: 20px;
+                        transform: rotate(180deg);
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+                .accordion-button:not(.collapsed) {
+                    background-color: $color-primary;
+                    color: $color-light;
+                }
+            }
+        }
+    }
+}
+///// DARK VERSION /////
+.theme-dark {
+    .faq {
+        background-color: $color-secondary;
+        .accordion-item {
+            background-color: $color-dark-primary;
+        }
+        .accordion-collapse {
+            background-color: $color-dark-primary;
+            p {
+                color: $color-light !important;
+            }
+        }
+        .accordion-button {
+            background-color: $color-dark-primary;
+            color: $color-light !important;
+        }
+        .faqs-accordion
+            .accordion-item 
+            .accordion-header 
+            .accordion-button.collapsed {
+            &::before {
+                color: $color-light;
+            }
+            }
+    }
+}
+
+.bg-one {
+    &.faq {
+        .faqs-accordion {
+            .accordion-item {
+                box-shadow: 0px 1px 20px 0px $color-shadow;
+            }
+        }
+    }
+}

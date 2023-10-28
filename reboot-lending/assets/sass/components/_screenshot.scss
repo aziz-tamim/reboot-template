@@ -1,0 +1,98 @@
+.screenshot-slider {
+    &__image {
+        margin-top: 10px;
+        img {
+            border-radius: 30px;
+            @include respond(phone) {
+                margin: 0 auto;
+            }
+        }
+    }
+    &__shape {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        @include respond(big-desktop) {
+            display: none;
+        }
+    }
+
+    .swiper-pagination {
+        .swiper-pagination-bullet {
+            background-color: $color-primary;
+            transition: 0.4s;
+            padding: 5px;
+            &.swiper-pagination-bullet-active {
+                width: 30px;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+.screenshot {
+    &__btn-prev {
+        left: -30px;
+        right: auto;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: $color-primary;
+        color: $color-light;
+        transition: all 0.5s;
+        padding: 8px;
+        &::after {
+            font-size: 16px;
+        }
+        &:hover {
+            background-color: $color-secondary;
+        }
+        @include respond(big-desktop) {
+            left: 15px;
+        }
+        @include respond(phone) {
+            display: none;
+        }
+    }
+    &__btn-next {
+        left: auto;
+        right: -30px;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: $color-primary;
+        color: $color-light;
+        transition: all 0.5s;
+        padding: 8px;
+        &::after {
+            font-size: 16px;
+        }
+        &:hover {
+            background-color: $color-secondary;
+        }
+        @include respond(big-desktop) {
+            right: 15px;
+        }
+        @include respond(phone) {
+            display: none;
+        }
+    }
+}
+
+.gslide-media .gslide-image {
+    background-color: $color-light;
+}
+
+/////  DARK VERSION  /////
+.theme-dark {
+    .screenshot {
+        background-color: $color-dark-primary;
+        &__btn-prev:hover {
+            background-color: $color-secondary;
+        }
+        &__btn-next:hover {
+            background-color: $color-secondary;
+        }
+    }
+}

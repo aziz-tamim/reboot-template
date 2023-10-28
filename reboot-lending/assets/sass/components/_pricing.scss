@@ -1,0 +1,270 @@
+/*===============
+    PRICING
+===============*/
+.pricing {
+    &__item {
+      text-align: center;
+      padding: 25px;
+      padding-bottom: 40px;
+      border-radius: 10px;
+      position: relative;
+      background-color: $color-light;
+      box-shadow: 2px 0px 15px 5px $color-shadow;
+  
+      &:hover {
+        background-color: $color-light;
+      }
+      &__tag {
+        position: absolute;
+        left: 0;
+        top: 30px;
+        text-transform: uppercase;
+        background-color: $color-primary;
+        color: $color-light;
+        padding: 5px 12px;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;    
+        }
+        &__icon {
+            border-radius: 50%;
+            margin: 15px auto;
+            font-size: 50px;
+            background-color: $color-tertiary;
+            color: $color-primary;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            isolation: isolate;
+            overflow: hidden;
+            position: relative;
+            i {
+                z-index: 1;
+                position: relative;
+                transition: all 0.4s;
+            }
+            &::after {
+                position: absolute;
+                width: 0;
+                content: "";
+                background-color: $color-primary;
+                visibility: hidden;
+                opacity: 0;
+                -webkit-transition: 0.4s;
+                transition: 0.4s;
+                inset: 0;
+              }
+        }
+        &:hover .pricing__item__icon:after {
+            width: 100%;
+            visibility: visible;
+            opacity: 1;
+        }
+        &:hover .pricing__item__icon {
+            color: $color-light;
+        }
+        &__list {
+            display: flex;
+            justify-content: center;
+            ul {
+                li {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    margin-bottom: 12px;
+                    &:not(:first-child) {
+                        margin-top: 12px;
+                    }
+                }
+            }
+            &--ico {
+                width: 25px;
+                height: 25px;
+                border-radius: 100%;
+                border: 1px solid $color-primary;
+                color: $color-primary;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 18px;
+            }   
+        }
+        .btn__primary {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateY(50%) translateX(-50%);
+            display: flex;
+            align-items: center;
+            padding-right: 6px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            width: 200px;
+            justify-content: center;
+            span {
+                font-weight: 500;
+                i {
+                    margin-left: 7px;
+                    padding: 10px;
+                    display: inline-block;
+                    border-radius: 50%;
+                    font-size: 20px;
+                    background-color: $color-tertiary;
+                    color: $color-secondary;
+                }
+            }
+        }
+    }
+}
+
+/////  DARK VERSION  /////
+.theme-dark {
+    .pricing {
+      background-color: $color-dark-primary;
+      &__item {
+        background-color: $color-secondary;
+        &__icon {
+          color: $color-primary;
+        }
+        &:hover .pricing__item__icon {
+          color: $color-light;
+        }
+        &__icon {
+          &::after {
+            background-color: $color-primary;
+          }
+        }
+      }
+    }
+    .bg-one .pricing__item {
+      background-color: $color-secondary;
+    }
+  }
+  
+  .bg-one .pricing__item {
+    background-color: $color-light;
+  }
+
+///// PRICING VERSION 02  /////
+.pricing2 {
+    &__item {
+      background-color: $color-light;
+      border-radius: 10px;
+      padding: 40px 45px;
+      box-shadow: 2px 0px 15px 5px $color-shadow;
+      @include respond(desktop) {
+        padding: 20px;
+      }
+      @include respond(tablet) {
+        padding: 40px 45px;
+      }
+      @include respond(mini) {
+        padding: 15px;
+      }
+      &.brand {
+        background-color: $color-secondary;
+        color: $color-light;
+        position: relative;
+        overflow: hidden;
+        padding: 50px 45px;
+        margin-top: -10px;
+        @include respond(desktop) {
+          padding: 30px 20px;
+        }
+        @include respond(laptop) {
+          padding: 20px;
+        }
+        @include respond(tablet) {
+          padding: 40px 45px;
+        }
+        @include respond(mini) {
+          padding: 15px;
+        }
+        .pricing2__item__title,
+        .pricing2__item__subtitle {
+          color: $color-light;
+        }
+        .pricing2__item__list-icon {
+          color: $color-light;
+          border-color: $color-light;
+        }
+        .btn__primary {
+          &:hover {
+            span {
+              color: $color-secondary;
+            }
+          }
+          &:before {
+            background-color: $color-light;
+          }
+        }
+        .brand__item {
+          position: absolute;
+          top: 0;
+          right: 0;
+          background: $color-primary;
+          padding: 15px;
+          width: 160px;
+          text-align: center;
+          transform: rotate(45deg) translate(40px, -22px);
+          color: $color-light;
+          font-size: 14px;
+          font-weight: bold;
+          z-index: 2;
+        }
+      }
+      &__subtitle {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      &__title {
+        font-size: 72px;
+        padding: 10px 0;
+        sub {
+          font-size: 18px;
+          font-weight: 500;
+        }
+      }
+      hr {
+        background-color: $color-primary;
+        margin: 20px 0;
+      }
+      ul {
+        margin: 35px 0;
+        li {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          padding-bottom: 15px;
+          .pricing2__item__list-icon {
+            width: 22px;
+            height: 22px;
+            border-radius: 100%;
+            border: 1px solid $color-primary;
+            color: $color-primary;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  
+  /////  DARK VERSION  /////
+  .theme-dark {
+    .pricing2 {
+      background-color: $color-dark-primary;
+      &__item {
+        background-color: $color-secondary;
+      }
+    }
+    .pricing2__item ul li .pricing2__item__list-icon {
+      color: $color-light;
+      border-color: $color-light;
+    }
+}
+  

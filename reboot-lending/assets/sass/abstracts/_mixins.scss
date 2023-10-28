@@ -1,0 +1,46 @@
+/**
+* MEDIA QUERY MANAGER
+**/
+@mixin respond($breakpoint) {
+    @if $breakpoint == extraMini {
+      @media only screen and (max-width: 380px) {
+        @content;
+      } //380px
+    }
+    @if $breakpoint == mini {
+      @media only screen and (max-width: 450px) {
+        @content;
+      } //480px
+    }
+    @if $breakpoint == mini-phone {
+      @media only screen and (max-width: 480px) {
+        @content;
+      } //575px
+    }
+    @if $breakpoint == phone {
+      @media only screen and (max-width: 575px) {
+        @content;
+      } //575px
+    }
+    @if $breakpoint == tablet {
+      @media only screen and (max-width: 767px) {
+        @content;
+      } //767px
+    }
+    @if $breakpoint == laptop {
+      @media only screen and (max-width: 991px) {
+        @content;
+      } //991px
+    }
+    @if $breakpoint == desktop {
+      @media only screen and (max-width: 1199px) {
+        @content;
+      } //1199px
+    }
+    @if $breakpoint == big-desktop {
+      @media only screen and (max-width: 1400px) {
+        @content;
+      } //1400px
+    }
+  }
+  

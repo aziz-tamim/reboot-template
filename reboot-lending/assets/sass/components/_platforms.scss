@@ -1,0 +1,61 @@
+/*==============
+    PLATFORMS
+===============*/
+.bg-one {
+    .platforms {
+        &__single {
+            background-color: $color-light;
+        }
+    }
+}
+.platforms {
+    &__single {
+        box-shadow: 0 5px 40px 0 $color-shadow;
+        text-align: center;
+        padding: 30px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border-bottom: 3px solid transparent;
+        position: relative;
+
+        &:before {
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            height: 5px;
+            width: 0%;
+            content: '';
+            background: $color-primary;
+            transition: 0.4s;
+        }
+        &:hover {
+            &:before {
+                width: 100%;
+            }
+            color: $color-primary;
+        }
+        &--ico {
+            font-size: 32px;
+            margin-bottom: 15px;
+            transition: 0.4s;
+        }
+        &--title {
+            transition: 0.4s;
+            font-weight: 600;
+        }
+    }
+}
+
+///// HERo 3 DARK VERSION /////
+.theme-dark {
+    .bg-one.platforms,
+    .platforms {
+        background-color: $color-secondary;
+    }
+    .bg-one.platforms,
+    .platforms {
+        .platforms__single {
+            background: $color-dark-primary;
+        }
+    }
+}

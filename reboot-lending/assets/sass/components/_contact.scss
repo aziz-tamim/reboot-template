@@ -1,0 +1,193 @@
+/*===============
+    CONTACT 
+===============*/
+.contact {
+    &__item {
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        &--ico {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: $color-primary;
+            overflow: hidden;
+            position: relative;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            i {
+                isolation: isolate;
+            }
+            &:before {
+                content: '';
+                background: $color-primary;
+                position: absolute;
+                inset: 0;
+                opacity: 0.3;
+            }
+        }
+        h4 {
+            margin-bottom: 10px;
+            font-size: 22px;
+            font-weight: 600;
+        }
+        p {
+            margin-bottom: 0;
+        }
+    }
+    &__image {
+        height: 100%;
+        position: relative;
+        z-index: 1;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: $color-primary;
+        border-radius: 5px 0px 0px 5px;
+    }
+    &__address {
+        padding: 30px;
+        @include respond(desktop) {
+            padding: 20px;
+        }
+        &--single {
+            display: grid;
+            grid-gap: 15px;
+            grid-template-columns: 55px 1fr;
+            margin-bottom: 25px;
+            &--icon {
+                width: 55px;
+                height: 55px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 30px;
+                color: $color-primary;
+                overflow: hidden;
+                position: relative;
+                i {
+                    isolation: isolate;
+                }
+                &:before {
+                    content: '';
+                    background: $color-primary;
+                    position: absolute;
+                    inset: 0;
+                    opacity: 0.3;
+                }
+            }
+            &--content {
+                h4 {
+                    margin-bottom: 10px;
+                    font-size: 22px;
+                    font-weight: 600;
+                }
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    &__wrapper {
+        background: $color-tertiary;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    &__form {
+        label {
+            font-weight: 500;
+            color: $color-secondary;
+            margin-bottom: 5px;
+        }
+        padding: 30px;
+        @include respond(desktop) {
+            padding: 20px;
+        }
+        input,
+        textarea {
+            width: 100%;
+            border: none;
+            padding: 10px;
+            margin-bottom: 15px;
+            background-color: $color-light;
+            border-bottom: 2px solid transparent;
+            border-radius: 5px;
+        }
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border: none;
+            border-bottom: 2px solid $color-primary;
+        }
+        textarea {
+            min-height: 120px;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}
+
+.email-success,
+.email-failed,
+.email-loading,
+.success-msg,
+.error-msg {
+    text-align: center;
+    padding: 10px;
+    display: none;
+}
+.email-loading img {
+    width: 20px;
+    margin: 0 auto;
+}
+.email-failed .icon {
+    font-size: 20px;
+    position: relative;
+    top: 5px;
+}
+.email-failed .icon,
+.email-success .icon,
+.error-msg .icon,
+.success-msg .icon {
+    font-size: 20px;
+    position: relative;
+    top: 2px;
+}
+
+.bg-one {
+    .contact {
+        &__wrapper {
+            background-color: $color-light;
+        }
+        &__form {
+            input,
+            textarea {
+                background-color: $color-tertiary;
+            }
+        }
+    }
+}
+
+///// DARK VERSION /////
+.theme-dark {
+    .contact {
+        background-image: none;
+        background-color: $color-secondary;
+        &__wrapper {
+            background: $color-dark-primary;
+        }
+        &__form {
+            label {
+                color: $color-light;
+            }
+            input, textarea {
+                background-color: $color-secondary;
+                color: $color-light;
+            }
+        }
+    }
+}

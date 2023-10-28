@@ -1,0 +1,84 @@
+/*==============
+    WHAT WE DO
+================*/
+.what-we-do {
+    .col-md-6 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    &__item {
+        padding: 40px 30px;
+        border-radius: 5px;
+        box-shadow: 2px 0px 15px 5px $color-shadow;
+        height: 100%;
+        &:hover .what-we-do__item__icon:after {
+            width: 100%;
+            visibility: visible;
+            opacity: 1;
+        }
+        &:hover .what-we-do__item__icon {
+            color: $color-light;
+        }
+        &__icon {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $color-tertiary;
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: $color-primary;
+            overflow: hidden;
+            position: relative;
+            isolation: isolate;
+            i {
+                z-index: 1;
+                position: relative;
+                transition: all 0.4s;
+            }
+            &::after {
+                position: absolute;
+                width: 0;
+                content: '';
+                background-color: $color-primary;
+                visibility: hidden;
+                opacity: 0;
+                -webkit-transition: 0.4s;
+                transition: 0.4s;
+                inset: 0;
+
+            }
+        }
+        h3 {
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+        ul {
+            li {
+                padding-left: 20px;
+                position: relative;
+                line-height: 1.8;
+                &:before {
+                    content: '\ea94';
+                    font-family: 'IcoFont';
+                    position: absolute;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+///// DARK VERSION /////
+.theme-dark {
+    .what-we-do {
+        background-image: none;
+        background-color: $color-dark-primary;
+        &__item {
+            background-color: $color-secondary;
+        }
+    }
+}

@@ -1,0 +1,142 @@
+/*==============
+    FOOTER
+===============*/
+.footer {
+    background-color: $color-dark-primary;
+    color: $color-light;
+    &__title {
+        color: $color-light;
+        h3 {
+            color: $color-light;
+        }
+        @include respond(phone) {
+            text-align: center;
+        }
+    }
+    &__subscribe {
+        display: flex;
+        align-items: center;
+        background-color: $color-light;
+        border-radius: 50px;
+        padding: 5px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: 0;
+        .btn__primary {
+            border-radius: 50px;
+            width: 160px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: $color-light;
+            border-radius: 50px;
+            font-size: 18px;
+            &:focus {
+                outline: none;
+            }
+        }
+        @include respond(laptop) {
+            width: 100%;
+            display: block;
+            background-color: inherit !important;
+            padding: 0px;
+            border-radius: 0px;
+            border: none;
+            input {
+                margin-bottom: 10px;
+                border: 1px solid $color-secondary;
+                padding: 10px 20px;
+            }
+            .btn__primary {
+                width: 100%;
+            }
+        }
+    }
+    &__middle {
+        h4 {
+            font-weight: 600;
+            font-size: 22px;
+            color: $color-light;
+        }
+        a,
+        p {
+            color: $color-light;
+        }
+    }
+
+    &__social-icon {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        li {
+            a {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $color-light;
+                color: $color-secondary;
+                transition: all 0.4s;
+                &:hover {
+                    background-color: $color-primary;
+                    color: $color-light;
+                }
+            }
+        }
+    }
+    &__bottom {
+        padding: 15px 0;
+        text-align: center;
+    }
+    form {
+        @include respond(phone) {
+            width: 80%;
+            margin: 0 auto;
+        }
+        @include respond(extraMini) {
+            width: 100%;
+        }
+    }
+}
+
+.theme-dark {
+    input, textarea {
+        background-color: $color-secondary;
+        color: $color-light;
+    }
+    .footer__subscribe {
+        background-color: $color-secondary;
+        .btn__primary {
+            &:hover {
+                span {
+                    color: $color-light;
+                }
+            }
+            &::before {
+                background-color: $color-secondary;
+            }
+        }
+    }
+}
+
+///// Footer version 2 /////
+.footer2 {
+    .footer__bottom {
+        padding: 15px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include respond(tablet) {
+            flex-direction: column;
+            justify-content: center;
+            p {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

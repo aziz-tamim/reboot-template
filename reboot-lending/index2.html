@@ -1,0 +1,1544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--====== Title ======-->
+    <title>Reboot - Multipurpose Corporate landing page</title>
+     <!-- ========== Favicon Ico ========== -->
+     <link rel="icon" href="assets/images/favicon.ico" />
+     <!--====== Bootstrap css ======-->
+     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+     <!--====== IcoFont css ======-->
+     <link rel="stylesheet" href="assets/css/icofont.min.css" />
+     <!--====== Odometer css ======-->
+     <link rel="stylesheet" href="assets/css/odometer-theme-default.css" />
+     <!--====== GLightbox css ======-->
+     <link rel="stylesheet" href="assets/css/glightbox.css" />
+     <!--====== Swiper css ======-->
+     <link rel="stylesheet" href="assets/css/swiper.min.css" />
+     <!--====== Style css ======-->
+     <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+     <!-- ========== Preloader start ========== -->
+     <div id="preLoader"></div>
+     <!-- ========== Preloader End ========== -->
+     <!-- ========== Header start ========== -->
+     <header class="header">
+       <div class="container">
+         <div class="row">
+           <nav class="navbar navbar-expand-lg">
+             <a class="navbar-brand" href="index.html">
+               <h1 class="m-0">Reboot.</h1>
+             </a>
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul id="nav" class="navbar-nav menu ms-lg-auto">
+                 <li class="nav-item dropdown submenu">
+                   <a class="nav-link active scroll" href="#hero">Home </a>
+                   <span
+                     class="sub-menu-toggle dropdown-toggle"
+                     role="button"
+                     data-bs-toggle="dropdown"
+                     aria-expanded="false"
+                   >
+                     <i class="icofont-rounded-down"></i>
+                   </span>
+                   <ul class="dropdown-menu">
+                     <li class="nav-item">
+                       <a href="index.html" class="nav-link"
+                         >Business solution</a
+                       >
+                     </li>
+                     <li class="nav-item">
+                       <a href="index2.html" class="nav-link">IT solution</a>
+                     </li>
+                     <li class="nav-item">
+                       <a href="index3.html" class="nav-link"
+                         >Marketing solution</a
+                       >
+                     </li>
+                     <li class="nav-item">
+                       <a href="index4.html" class="nav-link">Digital agency</a>
+                     </li>
+                     <li class="nav-item">
+                       <a href="index5.html" class="nav-link"
+                         >Software landing</a
+                       >
+                     </li>
+                     <li class="nav-item">
+                       <a href="index6.html" class="nav-link">Apps landing</a>
+                     </li>
+                     <li class="nav-item">
+                       <a href="index-rtl.html" class="nav-link">Rtl version</a>
+                     </li>
+                   </ul>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link scroll" href="#about">About</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link scroll" href="#services">Services</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link scroll" href="#projects">Projects</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link scroll" href="#team">Team</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link scroll" href="#testimonial">Review</a>
+                 </li>
+                 <li class="nav-item dropdown submenu">
+                   <a class="nav-link scroll" href="#blog">Blog </a>
+                   <span
+                     class="sub-menu-toggle dropdown-toggle"
+                     role="button"
+                     data-bs-toggle="dropdown"
+                     aria-expanded="false"
+                   >
+                     <i class="icofont-rounded-down"></i>
+                   </span>
+                   <ul class="dropdown-menu">
+                     <li class="nav-item">
+                       <a href="blog-grid.html" class="nav-link"
+                         >Blog Grid</a
+                       >
+                     </li>
+                     <li class="nav-item">
+                       <a href="blog-grid-v2.html" class="nav-link"
+                         >Blog Grid V2</a
+                       >
+                     </li>
+                     <li class="nav-item">
+                       <a href="blog-list.html" class="nav-link"
+                         >Blog List</a
+                       >
+                     </li>
+                     
+                     <li class="nav-item">
+                       <a href="left-sidebar.html" class="nav-link"
+                         >Left Sidebar</a
+                       >
+                     </li>
+                     <li class="nav-item">
+                       <a href="right-sidebar.html" class="nav-link"
+                         >Right Sidebar</a
+                       >
+                     </li>
+                     <li class="nav-item">
+                       <a
+                         href="details-without-sidebar.html"
+                         class="nav-link"
+                         >Details Without Sidebar
+                       </a>
+                     </li>
+                     <li class="nav-item">
+                       <a href="details-left-sidebar.html" class="nav-link"
+                         >Details Left Sidebar
+                       </a>
+                     </li>
+                     <li class="nav-item">
+                       <a href="details-right-sidebar.html" class="nav-link"
+                         >Details Right Sidebar
+                       </a>
+                     </li>
+                   </ul>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link scroll" href="#contact">Contact</a>
+                 </li>
+ 
+                 <li class="nav-item">
+                   <div class="switch-box">
+                     <label id="switch" class="switch">
+                       <input
+                         type="checkbox"
+                         onchange="toggleTheme()"
+                         id="slider"
+                       />
+                       <span class="slider round"></span>
+                     </label>
+                   </div>
+                 </li>
+               </ul>
+             </div>
+             <button
+               class="navbar-toggler collapsed"
+               type="button"
+               data-bs-toggle="collapse"
+               data-bs-target="#navbarSupportedContent"
+               aria-controls="navbarSupportedContent"
+               aria-expanded="false"
+               aria-label="Toggle navigation"
+             >
+               <span></span><span></span><span></span><span></span><span></span
+               ><span></span>
+             </button>
+           </nav>
+         </div>
+       </div>
+     </header>
+     <!-- ========== Header end ========== -->
+    <!-- ========== Hero section start ========== -->
+    <section id="hero" class="hero2 hero-padding bg-one">
+        <div class="container position-relative">
+          <div class="row align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0 text-center text-md-start">
+              <div class="badge-text">Best IT solution provider</div>
+              <h1 class="hero2__title display-4 mb-4 text-capitalize">
+                We provide better <span>IT solutions</span>
+              </h1>
+              <p class="mb-4 fs-5">
+                Many vendors, software developers, in particular, refer to all of
+                their individual products as software solutions.
+              </p>
+              <a href="#about" class="btn__primary btn-md smooth">
+                <span>Get details</span>
+              </a>
+            </div>
+            <div class="col-lg-6">
+              <div class="hero2__right">
+                <div class="hero2__right--col1">
+                  <div class="hero2__right--img1">
+                    <img src="assets/images/it-solution-hero-1.webp" alt="image" />
+                  </div>
+                </div>
+                <div class="hero2__right--col2">
+                  <div class="hero2__right--img2">
+                    <img src="assets/images/it-team-2.webp" alt="image" />
+                  </div>
+                  <div class="hero2__right--img3">
+                    <img src="assets/images/itteam3.webp" alt="image" />
+                  </div>
+                </div>
+                <div class="hero2__trusted--badge">
+                    <h5><span class="odometer" data-count="450"></span>+</h5>
+                    <p>Trusted clients</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- ========== Hero section end ========== -->
+    <!-- ========== About section start ========== -->
+    <section id="about" class="about2 section-padding">
+        <div class="container">
+          <div class="row gx-xl-5">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <div class="section-title-left">
+                <p class="badge-text">About Us</p>
+                <h3 class="mb-4">We provide IT services at very large scale</h3>
+                <p>
+                  Many vendors, software developers, in particular, refer to all
+                  of their individual products as software solutions. For example,
+                  a vendor may call its antivirus software a solution because it
+                  helps to solve a particular problem.
+                </p>
+              </div>
+  
+              <div class="about2__items">
+                <div class="about2__items--single">
+                  <div class="about2__items--single--icon">
+                    <i class="icofont-check-circled"></i>
+                  </div>
+                  <div class="about2__items--text">
+                    <h3>Certified company</h3>
+                    <p>
+                      My idea of good company, Mr Elliot, is the company of
+                      clever, well-informed people that is what I call good
+                      company.
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="about2__items--single">
+                  <div class="about2__items--single--icon">
+                    <i class="icofont-check-circled"></i>
+                  </div>
+                  <div class="about2__items--text">
+                    <h3>Awareded company</h3>
+                    <p>
+                      You are mistaken," said he gently, "that is not good
+                      company; that is the best. Good company requires only
+                      birth(...)
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="about2__items--single">
+                  <div class="about2__items--single--icon">
+                    <i class="icofont-check-circled"></i>
+                  </div>
+                  <div class="about2__items--text">
+                    <h3>Innovation and design thinker</h3>
+                    <p>
+                      Imagination is much more important than innovation. There
+                      will be no innovation without vivid imagination.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="about2__image">
+                <img
+                  src="assets/images/itteam2.webp"
+                  class="about2__image--one"
+                  alt="image"
+                />
+                <img
+                  src="assets/images/it-solution-about-1.webp"
+                  class="about2__image--two"
+                  alt="image"
+                />
+                <div class="about2__image--promo">
+                  <span class="about2__image--promo--ico"
+                    ><i class="icofont-nerd-smile"></i
+                  ></span>
+                  <div class="about2__image--promo--text">
+                    <h3><span class="odometer" data-count="25"></span>+</h3>
+                    years of experience
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ========== About section end ========== -->
+    <!-- ========== Service section start ========== -->
+    <section
+      id="services"
+      class="services2 section-padding position-relative bg-one"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-lg-8 mx-auto">
+            <div class="section-title-center">
+              <p class="badge-text">Services</p>
+              <h3>Best services your business grouth</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-3 col-lg-4 col-md-6 services2__item--wrap">
+            <div class="services2__item translateEffect1">
+              <div class="services2__item--content">
+                <span class="services2__item--content--number">01</span>
+                <h3>Tech/IT support</h3>
+
+                <a class="ico__link" href="#"><i class="icofont-plus"></i></a>
+              </div>
+              <span class="services2__item--ico"
+                ><i class="icofont-live-support"></i
+              ></span>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6 services2__item--wrap">
+            <div class="services2__item translateEffect1">
+              <div class="services2__item--content">
+                <span class="services2__item--content--number">02</span>
+                <h3>Cloud services</h3>
+
+                <a class="ico__link" href="#"><i class="icofont-plus"></i></a>
+              </div>
+              <span class="services2__item--ico"
+                ><i class="icofont-cloud-refresh"></i
+              ></span>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6 services2__item--wrap">
+            <div class="services2__item translateEffect1">
+              <div class="services2__item--content">
+                <span class="services2__item--content--number">03</span>
+                <h3>Data security</h3>
+
+                <a class="ico__link" href="#"><i class="icofont-plus"></i></a>
+              </div>
+              <span class="services2__item--ico"
+                ><i class="icofont-data"></i
+              ></span>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6 services2__item--wrap">
+            <div class="services2__item translateEffect1">
+              <div class="services2__item--content">
+                <span class="services2__item--content--number">04</span>
+                <h3>Office phones</h3>
+
+                <a class="ico__link" href="#"><i class="icofont-plus"></i></a>
+              </div>
+              <span class="services2__item--ico"
+                ><i class="icofont-telephone"></i
+              ></span>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6 services2__item--wrap">
+            <div class="services2__item translateEffect1">
+              <div class="services2__item--content">
+                <span class="services2__item--content--number">05</span>
+                <h3>Network equipment</h3>
+
+                <a class="ico__link" href="#"><i class="icofont-plus"></i></a>
+              </div>
+              <span class="services2__item--ico"
+                ><i class="icofont-ui-network"></i
+              ></span>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6 services2__item--wrap">
+            <div class="services2__item translateEffect1">
+              <div class="services2__item--content">
+                <span class="services2__item--content--number">06</span>
+                <h3>Web development</h3>
+
+                <a class="ico__link" href="#"><i class="icofont-plus"></i></a>
+              </div>
+              <span class="services2__item--ico"
+                ><i class="icofont-dashboard-web"></i
+              ></span>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6 services2__item--wrap">
+            <div class="services2__item translateEffect1">
+              <div class="services2__item--content">
+                <span class="services2__item--content--number">07</span>
+                <h3>Mobile development</h3>
+
+                <a class="ico__link" href="#"><i class="icofont-plus"></i></a>
+              </div>
+              <span class="services2__item--ico"
+                ><i class="icofont-ui-touch-phone"></i
+              ></span>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6 services2__item--wrap">
+            <div class="services2__item translateEffect2">
+              <div class="services2__item--content">
+                <span class="services2__item--content--number">08</span>
+                <h3>Blockchain</h3>
+
+                <a class="ico__link" href="#"><i class="icofont-plus"></i></a>
+              </div>
+              <span class="services2__item--ico"
+                ><i class="icofont-chart-line"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== Service section end ========== -->
+
+    <!-- ========== CTA section start ========== -->
+    <section id="cta" class="ctav2">
+        <div class="container-fluid">
+            <div class="row gx-xl-5">
+                <div class="col-xl-7 col-lg-6">
+                    <div
+                      class="ctav2__video"
+                      style="background-image: url(assets/images/it-solution-cta.webp)"
+                    >
+                      <a
+                        href="https://www.youtube.com/watch?v=d2Q3e56iJGs"
+                        class="glightbox3 video-btn"
+                      >
+                        <i class="icofont-ui-play"></i
+                      ></a>
+        
+                      <div class="waves-block">
+                        <div class="waves wave-1"></div>
+                        <div class="waves wave-2"></div>
+                        <div class="waves wave-3"></div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="col-xl-5 col-lg-6">
+                    <div class="ctav2__content">
+                        <div class="section-title-left">
+                            <h3 class="mb-4">We Run All Kink Of IT Services.</h3>
+                            <p>
+                                While other people may not know, in my case, if I just had the
+                                time, I'd be buried over my head in things I'd want to do. I
+                                don't have the time to not think about things I need or want.
+                            </p>
+                        </div>
+
+                        <div class="ctav2__content--counter mb-5">
+                            <div class="ctav2__content--counter--single">
+                                <h3><span class="odometer" data-count="18"></span>K</h3>
+                                <p>Worksrs</p>
+                            </div>
+
+                            <div class="ctav2__content--counter--single">
+                                <h3><span class="odometer" data-count="999"></span>+</h3>
+                                <p>Projects</p>
+                            </div>
+
+                            <div class="ctav2__content--counter--single">
+                                <h3><span class="odometer" data-count="100"></span>%</h3>
+                                <p>Satisfaction</p>
+                            </div>
+                        </div>
+                        <a class="btn__primary" href="#"><span>Let's talk</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== CTA section End ========== -->
+    
+    <!-- ========== Projects section start ========== -->
+    <section id="projects" class="portfoliov2 bg-one section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-lg-8 mx-auto">
+              <div class="section-title-center">
+                <p class="badge-text">Recent projects</p>
+                <h3>Get inspired by our finest works</h3>
+              </div>
+            </div>
+          </div>
+  
+          <div class="row">
+            <!-- Start single portfolio item-->
+            <div class="col-lg-4 col-md-6 col-sm-6">
+              <div class="portfoliov2__single translateEffect1">
+                <div class="portfoliov2__single--image">
+                  <a href="project-details.html">
+                    <img
+                      class="img-fluid"
+                      src="assets/images/blog/it-solution-blog-1.webp"
+                      alt="Portfolio 1"
+                    />
+                  </a>
+                </div>
+                <div class="portfoliov2__single--content">
+                  <a href="project-details.html">
+                    <h3>IT Management</h3>
+                    <span>Technology</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- End single portfolio item-->
+  
+            <!-- Start single portfolio item-->
+            <div class="col-lg-4 col-md-6 col-sm-6">
+              <div class="portfoliov2__single translateEffect1">
+                <div class="portfoliov2__single--image">
+                  <a href="project-details.html">
+                    <img
+                      class="img-fluid"
+                      src="assets/images/blog/it-solution-blog-2.webp"
+                      alt="Portfolio 1"
+                    />
+                  </a>
+                </div>
+                <div class="portfoliov2__single--content">
+                  <a href="project-details.html">
+                    <h3>Cyber Security</h3>
+                    <span>Technology</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- End single portfolio item-->
+  
+            <!-- Start single portfolio item-->
+            <div class="col-lg-4 col-md-6 col-sm-6">
+              <div class="portfoliov2__single translateEffect1">
+                <div class="portfoliov2__single--image">
+                  <a href="project-details.html">
+                    <img
+                      class="img-fluid"
+                      src="assets/images/blog/it-solution-blog-3.webp"
+                      alt="Portfolio 1"
+                    />
+                  </a>
+                </div>
+                <div class="portfoliov2__single--content">
+                  <a href="project-details.html">
+                    <h3>Cloud Computing</h3>
+                    <span>Technology</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- End single portfolio item-->
+  
+            <!-- Start single portfolio item-->
+            <div class="col-lg-4 col-md-6 col-sm-6">
+              <div class="portfoliov2__single translateEffect1">
+                <div class="portfoliov2__single--image">
+                  <a href="project-details.html">
+                    <img
+                      class="img-fluid"
+                      src="assets/images/blog/it-solution-blog-5.webp"
+                      alt="Portfolio 1"
+                    />
+                  </a>
+                </div>
+                <div class="portfoliov2__single--content">
+                  <a href="project-details.html">
+                    <h3>Backup & Recovery</h3>
+                    <span>Technology</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- End single portfolio item-->
+  
+            <!-- Start single portfolio item-->
+            <div class="col-lg-4 col-md-6 col-sm-6">
+              <div class="portfoliov2__single translateEffect1">
+                <div class="portfoliov2__single--image">
+                  <a href="project-details.html">
+                    <img
+                      class="img-fluid"
+                      src="assets/images/blog/it-solution-blog-6.webp"
+                      alt="Portfolio 1"
+                    />
+                  </a>
+                </div>
+                <div class="portfoliov2__single--content">
+                  <a href="project-details.html">
+                    <h3>Software Dev</h3>
+                    <span>Technology</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- End single portfolio item-->
+  
+            <!-- Start single portfolio item-->
+            <div class="col-lg-4 col-md-6 col-sm-6">
+              <div class="portfoliov2__single translateEffect1">
+                <div class="portfoliov2__single--image">
+                  <a href="project-details.html">
+                    <img
+                      class="img-fluid"
+                      src="assets/images/it-solution-cta.webp"
+                      alt="Portfolio 1"
+                    />
+                  </a>
+                </div>
+                <div class="portfoliov2__single--content">
+                  <a href="project-details.html">
+                    <h3>Social Media App</h3>
+                    <span>Technology</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- End single portfolio item-->
+          </div>
+        </div>
+      </section>
+      <!-- ========== Projects section end ========== -->
+    <!-- ========== Pricing section start ========== -->
+    <section class="section-padding pricing2" id="pricing">
+        <div class="container">
+          <div class="section-title-center">
+            <div class="row gx-xl-5">
+              <div class="col-md-10 col-lg-8 mx-auto">
+                <p class="badge-text">Choose your plan</p>
+                <h3>Flexible pricing plan</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+              <div class="pricing2__item">
+                <h4 class="pricing2__item__subtitle">Starter Plan</h4>
+                <h3 class="pricing2__item__title">$10 <sub>/Per Month</sub></h3>
+                <hr />
+                <ul>
+                  <li>
+                    <div class="pricing2__item__list-icon">
+                      <i class="icofont-check"></i>
+                    </div>
+                    <p>24/7 Support</p>
+                  </li>
+                  <li>
+                    <div class="pricing2__item__list-icon">
+                      <i class="icofont-check"></i>
+                    </div>
+                    <p>Suitable for small business</p>
+                  </li>
+                  <li>
+                    <div class="pricing2__item__list-icon">
+                      <i class="icofont-check"></i>
+                    </div>
+                    <p>No Updates Facility</p>
+                  </li>
+                </ul>
+                <a href="#" class="btn__primary w-100">
+                  <span>Choose Plan <i class="icofont-arrow-right"></i></span>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+              <div class="pricing2__item brand">
+                <span class="brand__item">Popular</span>
+                <h4 class="pricing2__item__subtitle">Starter Plan</h4>
+                <h3 class="pricing2__item__title">$15 <sub>/Per Month</sub></h3>
+                <hr />
+                <ul>
+                  <li>
+                    <div class="pricing2__item__list-icon">
+                      <i class="icofont-check"></i>
+                    </div>
+                    <p>Full Access</p>
+                  </li>
+                  <li>
+                    <div class="pricing2__item__list-icon">
+                      <i class="icofont-check"></i>
+                    </div>
+                    <p>Suitable for enterprice business</p>
+                  </li>
+                  <li>
+                    <div class="pricing2__item__list-icon">
+                      <i class="icofont-check"></i>
+                    </div>
+                    <p>Free Lifetime Updates Facility</p>
+                  </li>
+                </ul>
+                <a href="#" class="btn__primary w-100">
+                  <span>Choose Plan <i class="icofont-arrow-right"></i></span>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="pricing2__item">
+                <h4 class="pricing2__item__subtitle">Starter Plan</h4>
+                <h3 class="pricing2__item__title">$19 <sub>/Per Month</sub></h3>
+                <hr />
+                <ul>
+                  <li>
+                    <div class="pricing2__item__list-icon">
+                      <i class="icofont-check"></i>
+                    </div>
+                    <p>Full Access</p>
+                  </li>
+                  <li>
+                    <div class="pricing2__item__list-icon">
+                      <i class="icofont-check"></i>
+                    </div>
+                    <p>Multiple User Capabilities</p>
+                  </li>
+                  <li>
+                    <div class="pricing2__item__list-icon">
+                      <i class="icofont-check"></i>
+                    </div>
+                    <p>Free Lifetime Updates Facility</p>
+                  </li>
+                </ul>
+                <a href="#" class="btn__primary w-100">
+                  <span>Choose Plan <i class="icofont-arrow-right"></i></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ========== Pricing section end ========== -->
+          <!-- ========== Cta start ========== -->
+    <section
+    class="section-padding cta"
+    style="background-image: url(assets/images/ctabg.webp)"
+  >
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <div class="cta__content">
+            <h2 class="display-4 mb-3">
+              From the inside giving the solution for publicity
+            </h2>
+            <p class="fs-5 mb-5">
+              Preferring to go on writing binges, Strayed, who is the mother
+              of two small children, often ensconces herself in a hotel room
+              to burrow into her work for a few days or weeks.
+            </p>
+            <div class="position-relative">
+              <a
+                href="https://www.youtube.com/watch?v=d2Q3e56iJGs"
+                class="glightbox3 video-btn"
+              >
+                <i class="icofont-ui-play"></i
+              ></a>
+              <div class="promo-video">
+                <div class="waves-block">
+                  <div class="waves wave-1"></div>
+                  <div class="waves wave-2"></div>
+                  <div class="waves wave-3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ========== Cta end ========== -->
+  <!-- ========== Team section start ========== -->
+  <section id="team" class="teamv2 section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-lg-8 mx-auto">
+                <div class="section-title-center">
+                    <p class="badge-text">Team members</p>
+                    <h3>Expert Team Members</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Single team start -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="teamv2__single translateEffect1">
+                    <div class="teamv2__single--image">
+                        <img class="img-fluid" src="assets/images/team1.webp" alt="image" />
+                    </div>
+                    <div class="teamv2__single--content">
+                        <div class="teamv2__single--author">
+                            <h3>Saan chew</h3>
+                            <span>Founder & CEO</span>
+                        </div>
+                        <div class="teamv2__single--social">
+                            <ul>
+                                <li>
+                                    <a  href="#"
+                                    ><i class="icofont-linkedin"></i
+                                  ></a>
+                                </li>
+                                <li>
+                                    <a  href="#"
+                                    ><i class="icofont-instagram"></i
+                                  ></a>
+                                </li>
+                                <li>
+                                    <a  href="#"
+                                    ><i class="icofont-twitter"></i
+                                  ></a>
+                                </li>
+                                <li>
+                                    <a  href="#"
+                                    ><i class="icofont-facebook"></i
+                                  ></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Single team end -->
+             <!-- Single team start -->
+             <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="teamv2__single translateEffect1">
+                    <div class="teamv2__single--image">
+                        <img class="img-fluid" src="assets/images/team2.webp" alt="image" />
+                    </div>
+                    <div class="teamv2__single--content">
+                        <div class="teamv2__single--author">
+                            <h3>Sayed khan</h3>
+                            <span>Marketing expert</span>
+                        </div>
+                        <div class="teamv2__single--social">
+                            <ul>
+                                <li>
+                                    <a  href="#"
+                                    ><i class="icofont-linkedin"></i
+                                  ></a>
+                                </li>
+                                <li>
+                                    <a  href="#"
+                                    ><i class="icofont-instagram"></i
+                                  ></a>
+                                </li>
+                                <li>
+                                    <a  href="#"
+                                    ><i class="icofont-twitter"></i
+                                  ></a>
+                                </li>
+                                <li>
+                                    <a  href="#"
+                                    ><i class="icofont-facebook"></i
+                                  ></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Single team end -->
+             <!-- Single team start -->
+             <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="teamv2__single translateEffect1">
+                    <div class="teamv2__single--image">
+                        <img class="img-fluid" src="assets/images/team3.webp" alt="image" />
+                    </div>
+                    <div class="teamv2__single--content">
+                        <div class="teamv2__single--author">
+                            <h3>sara Brick</h3>
+                            <span>Web designer</span>
+                        </div>
+                        <div class="teamv2__single--social">
+                            <ul>
+                                <li>
+                                    <a  href="#"
+                                    ><i class="icofont-linkedin"></i
+                                  ></a>
+                                </li>
+                                <li>
+                                    <a  href="#"
+                                    ><i class="icofont-instagram"></i
+                                  ></a>
+                                </li>
+                                <li>
+                                    <a  href="#"
+                                    ><i class="icofont-twitter"></i
+                                  ></a>
+                                </li>
+                                <li>
+                                    <a  href="#"
+                                    ><i class="icofont-facebook"></i
+                                  ></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Single team end -->
+             <!-- Single team start -->
+             <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="teamv2__single translateEffect1">
+                    <div class="teamv2__single--image">
+                        <img class="img-fluid" src="assets/images/team4.webp" alt="image" />
+                    </div>
+                    <div class="teamv2__single--content">
+                        <div class="teamv2__single--author">
+                            <h3>Jeni deo</h3>
+                            <span>Blockchain expoert</span>
+                        </div>
+                        <div class="teamv2__single--social">
+                            <ul>
+                                <li>
+                                    <a  href="#"
+                                    ><i class="icofont-linkedin"></i
+                                  ></a>
+                                </li>
+                                <li>
+                                    <a  href="#"
+                                    ><i class="icofont-instagram"></i
+                                  ></a>
+                                </li>
+                                <li>
+                                    <a  href="#"
+                                    ><i class="icofont-twitter"></i
+                                  ></a>
+                                </li>
+                                <li>
+                                    <a  href="#"
+                                    ><i class="icofont-facebook"></i
+                                  ></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Single team end -->
+        </div>
+    </div>
+  </section>
+  <!-- ========== Team section end ========== -->
+
+  <!-- ========== Testimonial section start ========== -->
+  <section id="testimonial" class="section-padding bg-one testimonialv2">
+    <div class="container">
+        <div class="row gx-xl-5">
+            <div class="col-md-6 mb-4 mb-lg-0">
+                <div class="section-title-left">
+                    <p class="badge-text">Testimonial</p>
+                    <h3>What clients say about us</h3>
+                </div>
+                <div class="swiper testimonialSliderv2 pb-5">
+                    <div class="swiper-wrapper pb-3">
+                        <div class="swiper-slide testimonialv2__contnet--single">
+                            <div class="testimonial__contnet--info">
+                                <div class="testimonialv2__contnet--info--image">
+                                    <img 
+                                       class="img-fluid"
+                                       src="assets/images/client2.webp" 
+                                       alt="image"
+                                        />
+                                </div>
+                                <div class="testimonialv2__contnet--info--about">
+                                    <h4>Saayan dev</h4>
+                                    <span>Founder and CEO city group.</span>
+                                </div>
+                            </div>
+                            <div class="testimonialv2__contnet--quote">
+                                <blockquote>
+                                    This is what I want you all to do. I want you to open a
+                                    new document and type up a list of three problems in your
+                                    life. Not the universe's life - your own. Underneath, type
+                                    the solutions.
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonialv2__contnet--single">
+                            <div class="testimonial__contnet--info">
+                                <div class="testimonialv2__contnet--info--image">
+                                    <img 
+                                       class="img-fluid"
+                                       src="assets/images/client3.webp" 
+                                       alt="image"
+                                        />
+                                </div>
+                                <div class="testimonialv2__contnet--info--about">
+                                    <h4>Saayan dev</h4>
+                                    <span>Founder and CEO city group.</span>
+                                </div>
+                            </div>
+                            <div class="testimonialv2__contnet--quote">
+                                <blockquote>
+                                    This is what I want you all to do. I want you to open a
+                                    new document and type up a list of three problems in your
+                                    life. Not the universe's life - your own. Underneath, type
+                                    the solutions.
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonialv2__contnet--single">
+                            <div class="testimonial__contnet--info">
+                                <div class="testimonialv2__contnet--info--image">
+                                    <img 
+                                       class="img-fluid"
+                                       src="assets/images/client4.webp" 
+                                       alt="image"
+                                        />
+                                </div>
+                                <div class="testimonialv2__contnet--info--about">
+                                    <h4>Saayan dev</h4>
+                                    <span>Founder and CEO city group.</span>
+                                </div>
+                            </div>
+                            <div class="testimonialv2__contnet--quote">
+                                <blockquote>
+                                    This is what I want you all to do. I want you to open a
+                                    new document and type up a list of three problems in your
+                                    life. Not the universe's life - your own. Underneath, type
+                                    the solutions.
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination mt-3"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="testimonialv2__video">
+                    <img 
+                      class="img-fluid"  
+                      src="assets/images/it-testimonial.webp" 
+                      alt="image"
+                      />
+                      <a
+                      href="https://www.youtube.com/watch?v=d2Q3e56iJGs"
+                      class="glightbox3 video-btn"
+                    >
+                      <i class="icofont-ui-play"></i
+                    ></a>
+                    <div class="waves-block">
+                        <div class="waves wave-1"></div>
+                        <div class="waves wave-2"></div>
+                        <div class="waves wave-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!-- ========== Testimonial section end ========== -->
+    <!-- ========== Blog section start ========== -->
+    <section id="blog" class="blogv2 section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-lg-8 mx-auto">
+              <div class="section-title-center">
+                <p class="badge-text">Latest article</p>
+                <h3>Most popular blog & stories</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Start single blog item -->
+            <div class="col-lg-4 col-md-6 col-sm-6 mb-4 mb-lg-0">
+              <div class="blogv2__single translateEffect1">
+                
+                <div class="blogv2__single--image">
+                      <a href="details-right-sidebar.html">
+                        <img
+                          src="assets/images/blog/blog10.webp"
+                          alt="Blog Image"
+                        />
+                      </a>
+                    </div>
+                <div class="blogv2__single--content">
+                  <h2>
+                        <a href="details-right-sidebar.html"
+                          >10 secrets to connenct with your clients easily</a
+                        >
+                      </h2>
+                  <p>
+                    Wisdom is the mother of solutions. You cannot upgrade in
+                    wisdom and lack solutions and you cannot have a wisdom and be
+                    stranded in any challenge you face.
+                  </p>
+                  <div class="blogv2__single--content--meta">
+                    <ul>
+                      <li>
+                        <i class="icofont-user-alt-4"></i>
+                        <a href="#">John deo</a>
+                      </li>
+                      <li>
+                        <i class="icofont-calendar"></i>
+                        <a href="#">Aug 8, 2022</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End single blog item -->
+  
+            <!-- Start single blog item -->
+            <div class="col-lg-4 col-md-6 col-sm-6 mb-4 mb-lg-0">
+              <div class="blogv2__single translateEffect1">
+                
+                <div class="blogv2__single--image">
+                  <img src="assets/images/blog/blog11.webp" alt="Blog Image" />
+                </div>
+                <div class="blogv2__single--content">
+                  <h2>
+                        <a href="details-right-sidebar.html"
+                          >10 secrets to connenct with your clients easily</a
+                        >
+                      </h2>
+                  <p>
+                    Wisdom is the mother of solutions. You cannot upgrade in
+                    wisdom and lack solutions and you cannot have a wisdom and be
+                    stranded in any challenge you face.
+                  </p>
+                  <div class="blogv2__single--content--meta">
+                    <ul>
+                      <li>
+                        <i class="icofont-user-alt-4"></i>
+                        <a href="#">John deo</a>
+                      </li>
+                      <li>
+                        <i class="icofont-calendar"></i>
+                        <a href="#">Aug 8, 2022</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End single blog item -->
+  
+            <!-- Start single blog item -->
+            <div class="col-lg-4 mt-3 mt-lg-0 blogv2__right--posts">
+              <div class="blogv2__single blogv2__single--hr translateEffect2">
+                
+                <div class="blogv2__single--image">
+                      <a href="details-right-sidebar.html">
+                        <img
+                          src="assets/images/blog/blog12.webp"
+                          alt="Blog Image"
+                        />
+                      </a>
+                    </div>
+                <div class="blogv2__single--content">
+                  <h2>
+                        <a href="details-right-sidebar.html"
+                          >10 secrets to connenct with your clients easily</a
+                        >
+                      </h2>
+                  <div class="blogv2__single--content--meta">
+                    <ul>
+                      <li>
+                        <i class="icofont-user-alt-4"></i>
+                        <a href="#">John deo</a>
+                      </li>
+                      <li>
+                        <i class="icofont-calendar"></i>
+                        <a href="#">Aug 8, 2022</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="blogv2__single blogv2__single--hr translateEffect2">
+                
+                <div class="blogv2__single--image">
+                  <img src="assets/images/blog/blog11.webp" alt="Blog Image" />
+                </div>
+                <div class="blogv2__single--content">
+                  <h2>
+                        <a href="details-right-sidebar.html"
+                          >10 secrets to connenct with your clients easily</a
+                        >
+                      </h2>
+                  <div class="blogv2__single--content--meta">
+                    <ul>
+                      <li>
+                        <i class="icofont-user-alt-4"></i>
+                        <a href="#">John deo</a>
+                      </li>
+                      <li>
+                        <i class="icofont-calendar"></i>
+                        <a href="#">Aug 8, 2022</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="blogv2__single blogv2__single--hr translateEffect2">
+                
+                <div class="blogv2__single--image">
+                  <img src="assets/images/blog/blog12.webp" alt="Blog Image" />
+                </div>
+                <div class="blogv2__single--content">
+                  <h2>
+                        <a href="details-right-sidebar.html"
+                          >10 secrets to connenct with your clients easily</a
+                        >
+                      </h2>
+                  <div class="blogv2__single--content--meta">
+                    <ul>
+                      <li>
+                        <i class="icofont-user-alt-4"></i>
+                        <a href="#">John deo</a>
+                      </li>
+                      <li>
+                        <i class="icofont-calendar"></i>
+                        <a href="#">Aug 8, 2022</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="blogv2__single blogv2__single--hr translateEffect2">
+                
+                <div class="blogv2__single--image">
+                      <a href="details-right-sidebar.html">
+                        <img
+                          src="assets/images/blog/blog10.webp"
+                          alt="Blog Image"
+                        />
+                      </a>
+                    </div>
+                <div class="blogv2__single--content">
+                  <h2>
+                        <a href="details-right-sidebar.html"
+                          >10 secrets to connenct with your clients easily</a
+                        >
+                      </h2>
+                  <div class="blogv2__single--content--meta">
+                    <ul>
+                      <li>
+                        <i class="icofont-user-alt-4"></i>
+                        <a href="#">John deo</a>
+                      </li>
+                      <li>
+                        <i class="icofont-calendar"></i>
+                        <a href="#">Aug 8, 2022</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="blogv2__single blogv2__single--hr translateEffect2">
+                
+                <div class="blogv2__single--image">
+                      <a href="details-right-sidebar.html">
+                        <img
+                          src="assets/images/blog/blog10.webp"
+                          alt="Blog Image"
+                        />
+                      </a>
+                    </div>
+                <div class="blogv2__single--content">
+                  <h2>
+                        <a href="details-right-sidebar.html"
+                          >10 secrets to connenct with your clients easily</a
+                        >
+                      </h2>
+                  <div class="blogv2__single--content--meta">
+                    <ul>
+                      <li>
+                        <i class="icofont-user-alt-4"></i>
+                        <a href="#">John deo</a>
+                      </li>
+                      <li>
+                        <i class="icofont-calendar"></i>
+                        <a href="#">Aug 8, 2022</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End single blog item -->
+          </div>
+        </div>
+      </section>
+      <!-- ========== Blog section end ========== -->
+
+    <!-- ========== Contact section start ========== -->
+    <section id="contact" class="contact bg-one section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-lg-8 mx-auto">
+              <div class="section-title-center">
+                <p class="badge-text">Contact us</p>
+                <h3>Request a free consultation</h3>
+              </div>
+            </div>
+          </div>
+  
+          <div class="row gx-xl-5">
+            <div class="col-xl-10 offset-xl-1 contact__wrapper">
+              <div class="row">
+                <div class="col-lg-4 col-md-6">
+                  <div class="contact__address">
+                    <div class="contact__address--single">
+                      <div class="contact__address--single--icon">
+                        <i class="icofont-location-pin"></i>
+                      </div>
+                      <div class="contact__address--single--content">
+                        <h4>Location</h4>
+                        <p>
+                          70 Washington Square South, New York, NY, United States
+                        </p>
+                      </div>
+                    </div>
+  
+                    <div class="contact__address--single">
+                      <div class="contact__address--single--icon">
+                        <i class="icofont-phone"></i>
+                      </div>
+                      <div class="contact__address--single--content">
+                        <h4>Make a call</h4>
+                        <p>
+                          +121 25254 544788<br />
+                          +121 25254 544789
+                        </p>
+                      </div>
+                    </div>
+                    <div class="contact__address--single">
+                      <div class="contact__address--single--icon">
+                        <i class="icofont-clock-time"></i>
+                      </div>
+                      <div class="contact__address--single--content">
+                        <h4>Working Hours</h4>
+                        <p>
+                          Monday-friday: 9:00- 06:00<br />Saturday-Sunday: Holiday
+                        </p>
+                      </div>
+                    </div>
+  
+                    <div class="contact__address--single">
+                      <div class="contact__address--single--icon">
+                        <i class="icofont-email"></i>
+                      </div>
+                      <div class="contact__address--single--content">
+                        <h4>Send an email</h4>
+                        <p>
+                          support@biznes.com<br />
+                          hello@biznes.com
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                  <div class="contact__form">
+                    <form
+                      id="contact-form"
+                      method="post"
+                      action="php/message.php"
+                    >
+                      <div class="message col">
+                        <p class="email-loading alert alert-warning">
+                          <img
+                            src="assets/images/loading.gif"
+                            alt="image"
+                          />&nbsp;&nbsp;&nbsp;Sending...
+                        </p>
+                        <p class="email-success alert alert-success">
+                          <i class="icon icon-icon-check-alt2"></i> Your quote has
+                          successfully been sent.
+                        </p>
+                        <p class="email-failed alert alert-danger">
+                          <i class="icon icon-icon-close-alt2"></i> Something went
+                          wrong!
+                        </p>
+                      </div>
+                      <div class="mb13">
+                        <label for="contact-name">Name</label>
+                        <input
+                          name="name"
+                          class="contact-name"
+                          id="contact-name"
+                          type="text"
+                          placeholder="Your Name"
+                          required=""
+                        />
+                      </div>
+                      <div class="mb13">
+                        <label for="contact-email">Email</label>
+                        <input
+                          name="email"
+                          class="contact-email"
+                          id="contact-email"
+                          type="email"
+                          placeholder="Your Email"
+                          required=""
+                        />
+                      </div>
+                      <div class="mb13">
+                        <label for="contact-subject">Subject</label>
+                        <input
+                          name="subject"
+                          class="contact-subject"
+                          id="contact-subject"
+                          type="text"
+                          placeholder="Subject"
+                          required=""
+                        />
+                      </div>
+                      <div class="mb30">
+                        <label for="contact-message">Message</label>
+                        <textarea
+                          name="message"
+                          class="contact-message"
+                          id="contact-message"
+                          placeholder="Your Message"
+                          required=""
+                        ></textarea>
+                      </div>
+                      <button class="btn__primary">
+                        <span>Send Now</span>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ========== Contact section end ========== -->
+        <!-- ========== Footer section start ==========  -->
+  <section class="footer2 footer">
+    <div class="container">
+      <div class="footer-padding"> 
+        <div class="row gx-xl-5 align-items-center">
+          <div class="col-md-6 col-xl-6 mb-4 mb-xl-0">
+            <div class="footer__title">
+              <h3 class="display-6 mb-3">Join our newsletter</h3>
+              <p>
+                Resources advice avoid trees declared particular offended 
+                other anxous husband chicken miles great account. 
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-6">
+            <form action="assets/subscribe/subscribe.php" id="subscribe">
+              <div class="footer__subscribe">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  id="subscriber-email"
+                  required=""
+                />
+                <button class="btn__primary" id="subscribe-button">
+                  <span>Subscribe</span>
+                </button>
+              </div>
+              <div class="result">
+                <p class="success-msg">
+                  <i class="icofont-check"></i> Your email has been storde! 
+                </p>
+                <p class="error-msg">
+                  <i class="icofont-close"></i> Sorry! Something went Wrong!
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <hr class="p-0 m-0">
+      <div class="row">
+        <div class="footer__bottom">
+          <p>&copy; 2023 all right reserved.</p>
+          <ul class="footer__social-icon">
+            <li>
+              <a href="#"><i class="icofont-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="icofont-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="icofont-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="icofont-brand-whatsapp"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="icofont-facebook"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ========== Footer section End ========== -->
+    <!--====== jquery js ======-->
+    <script src="assets/js/jquery.min.js"></script>
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--====== One page nav ======-->
+    <script src="assets/js/onepageNav.js"></script>
+    <!--====== Appear js ======-->
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <!--====== Odometer js ======-->
+    <script src="assets/js/odometer.min.js"></script>
+    <!--====== GLightbox nav ======-->
+    <script src="assets/js/glightbox.min.js"></script>
+    <!--====== Swiper js ======-->
+    <script src="assets/js/swiper.min.js"></script>
+    <!--====== Ajaxchimp js ======-->
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <!--====== Custom js ======-->
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>

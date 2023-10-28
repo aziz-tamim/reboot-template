@@ -1,0 +1,1781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--====== Title ======-->
+    <title>Reboot - Multipurpose Corporate landing page</title>
+    <!-- ========== Favicon Ico ========== -->
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!--====== IcoFont css ======-->
+    <link rel="stylesheet" href="assets/css/icofont.min.css" />
+    <!--====== Odometer css ======-->
+    <link rel="stylesheet" href="assets/css/odometer-theme-default.css" />
+    <!--====== GLightbox css ======-->
+    <link rel="stylesheet" href="assets/css/glightbox.css" />
+    <!--====== Swiper css ======-->
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!--====== Custom css ======-->
+    <!-- <link rel="stylesheet" href="assets/css/custom.css"> -->
+</head>
+<body>
+    <!-- ========== Preloader start ========== -->
+    <div id="preLoader"></div>
+    <!-- ========== Preloader End ========== -->
+    <!-- ========== Header start ========== -->
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">
+              <h1 class="m-0">Reboot.</h1>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul id="nav" class="navbar-nav menu ms-lg-auto">
+                <li class="nav-item dropdown submenu">
+                  <a class="nav-link active scroll" href="#hero">Home </a>
+                  <span
+                    class="sub-menu-toggle dropdown-toggle"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="icofont-rounded-down"></i>
+                  </span>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item">
+                      <a href="index.html" class="nav-link"
+                        >Business solution</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a href="index2.html" class="nav-link">IT solution</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="index3.html" class="nav-link"
+                        >Marketing solution</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a href="index4.html" class="nav-link">Digital agency</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="index5.html" class="nav-link"
+                        >Software landing</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a href="index6.html" class="nav-link">Apps landing</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="index-rtl.html" class="nav-link">Rtl version</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link scroll" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link scroll" href="#overview">Overview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link scroll" href="#pricing">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link scroll" href="#faq">FAQ</a>
+                </li>
+                <li class="nav-item dropdown submenu">
+                  <a class="nav-link scroll" href="#blog">Blog </a>
+                  <span
+                    class="sub-menu-toggle dropdown-toggle"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="icofont-rounded-down"></i>
+                  </span>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item">
+                      <a href="blog-grid.html" class="nav-link"
+                        >Blog Grid</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a href="blog-grid-v2.html" class="nav-link"
+                        >Blog Grid V2</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a href="blog-list.html" class="nav-link"
+                        >Blog List</a
+                      >
+                    </li>
+                    
+                    <li class="nav-item">
+                      <a href="left-sidebar.html" class="nav-link"
+                        >Left Sidebar</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a href="right-sidebar.html" class="nav-link"
+                        >Right Sidebar</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        href="details-without-sidebar.html"
+                        class="nav-link"
+                        >Details Without Sidebar
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="details-left-sidebar.html" class="nav-link"
+                        >Details Left Sidebar
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="details-right-sidebar.html" class="nav-link"
+                        >Details Right Sidebar
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link scroll" href="#contact">Contact</a>
+                </li>
+
+                <li class="nav-item">
+                  <div class="switch-box">
+                    <label id="switch" class="switch">
+                      <input
+                        type="checkbox"
+                        onchange="toggleTheme()"
+                        id="slider"
+                      />
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <button
+              class="navbar-toggler collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span></span><span></span><span></span><span></span><span></span
+              ><span></span>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- ========== Header end ========== -->
+    <!-- ========== Hero section start ========== -->
+    <section class="hero5 hero-padding bg-one" id="hero">
+        <div class="container">
+          <div class="row gx-xl-5 align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0 d-flex align-items-center">
+              <div class="hero5__content">
+                <h1 class="hero2__title display-4 mb-4 text-capitalize">
+                  The Highly Secured Crypto-currency Software
+                </h1>
+                <p class="mb-4 fs-5">
+                  Crypto-currencyis any form of currency that exists digitally or
+                  virtually and uses cryptography to secure transactions.
+                </p>
+  
+                <form action="assets/subscribe/subscribe.php" id="subscribehero">
+                  <div class="hero6__content__input mb-2">
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Email*"
+                      id="subscriber-email-hero"
+                      required=""
+                    />
+                    <button class="btn__primary" id="subscribe-button-hero">
+                      <span>Take a free Trial</span>
+                    </button>
+                  </div>
+                  <div class="result">
+                    <p class="success-msg">
+                      <i class="icofont-check"></i> Your email has been stored!
+                    </p>
+                    <p class="error-msg">
+                      <i class="icofont-close"></i> Sorry! Something went wrong!
+                    </p>
+                  </div>
+                </form>
+                <p>*We Will give a trial download link to your mail address</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row hero5__image">
+                <div class="col-10">
+                  <div class="hero5-slide">
+                    <div class="swiper-wrapper pb-2">
+                      <!-- slider item start -->
+                      <div class="swiper-slide p-5px-lr">
+                        <img
+                          class="img-fluid"
+                          src="assets/images/software1.webp"
+                          alt="image"
+                        />
+                      </div>
+                      <!-- slider item end -->
+                      <!-- slider item start -->
+                      <div class="swiper-slide p-5px-lr">
+                        <img
+                          class="img-fluid"
+                          src="assets/images/software2.webp"
+                          alt="image"
+                        />
+                      </div>
+                      <!-- slider item end -->
+                      <!-- slider item start -->
+                      <div class="swiper-slide p-5px-lr">
+                        <img
+                          class="img-fluid"
+                          src="assets/images/software3.webp"
+                          alt="image"
+                        />
+                      </div>
+                      <!-- slider item end -->
+                    </div>
+                    <!-- <div class="swiper-button-next slid-next"></div>
+                    <div class="swiper-button-prev slid-prev"></div> -->
+                    <div class="swiper-pagination mt-3"></div>
+                  </div>
+                </div>
+                <span class="circle circle-1"></span>
+                <span class="circle circle-2"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ========== Hero section end ========== -->
+
+    <!-- ========== About section start ========== -->
+    <section id="about" class="about2 section-padding">
+        <div class="container">
+            <div class="row gx-xl-5">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="section-title-left">
+                        <p class="badge-text">ABOUT SOFTWARE</p>
+                        <h3 class="mb-4">Most popular features of the software</h3>
+                        <p>
+                            Yeah, the called and offered to help out. same software they 
+                            use for enhancing spy satellite imagery.
+                        </p>
+                    </div>
+
+                    <div class="about2__items">
+                        <div class="about2__items--single">
+                            <div class="about2__items--single--icon">
+                                <i class="icofont-check-circled"></i>
+                            </div>
+                            <div class="about2__items--text">
+                                <h3>Quick access</h3>
+                                <p>
+                                    Fabre looked up, his mobile face composed. "Good-bye," he 
+                                    said. "Georges-Jacques--study law. Law is a weapon"
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="about2__items--single">
+                            <div class="about2__items--single--icon">
+                                <i class="icofont-check-circled"></i>
+                            </div>
+                            <div class="about2__items--text">
+                                <h3>Cross platform</h3>
+                                <p>
+                                    You are mistaken," said he gently, "that is not good 
+                                    company; that is the best. good company requires only 
+                                    birth(....)
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="about2__items--single">
+                            <div class="about2__items--single--icon">
+                                <i class="icofont-check-circled"></i>
+                            </div>
+                            <div class="about2__items--text">
+                                <h3>Easy intregation</h3>
+                                <p>
+                                    Imagination is much more important than innovation. There 
+                                    will be no innovation without vivid imagination.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about2__image">
+                        <img 
+                            src="assets/images/messages-1.webp" 
+                            class="about2__image--one"
+                            alt="image"
+                        />
+                        <img
+                            src="assets/images/messages-2.webp"
+                            class="about2__image--two"
+                            alt="image"
+                        />
+                        <div class="about2__image--promo">
+                            <span class="about2__image--promo--ico"
+                            ><i class="icofont-users-alt-1"></i>
+                            </span>
+                            <div class="about2__image--promo--text">
+                                <h3><span class="odometer" data-count="9999"></span>+</h3>
+                                People using
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== About section End ========== -->
+    <!-- ========== Features section start ========== -->
+    <section class="overview section-padding bg-one">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto"></div>
+
+                <div class="section-title-center">
+                    <p class="badge-text">Overview</p>
+                    <h3>Software overview</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-10 mb-4 mb-lg-0">
+                    <div class="overview__content translateEffect2 h-100">
+                        <div class="overview__content--title">
+                            <h2>01</h2>
+                            <h3>Software messaging</h3>
+                            <p>
+                                Innovation is part of company offers to allow developers to 
+                                build their own cloud-computing infrastructure.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-10 mb-4 mb-lg-0">
+                    <div class="overview__content translateEffect2 h-100">
+                        <div class="overview__content--title">
+                            <h2>02</h2>
+                            <h3>Apps customisation</h3>
+                            <p>
+                                The initial burst to emulation on the web was about removing 
+                                the barrier to old software
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-10 mb-4 mb-lg-0">
+                    <div class="overview__content translateEffect2 h-100">
+                        <div class="overview__content--title">
+                            <h2>03</h2>
+                            <h3>Unlimited revision</h3>
+                            <p>
+                                Innovation is part of company offers to allow developers to 
+                                build their own cloud-computing infrastructure.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-10 mb-4 mb-lg-0">
+                    <div class="overview__content translateEffect2 h-100">
+                        <div class="overview__content--title">
+                            <h2>04</h2>
+                            <h3>Trusty Policy & terms</h3>
+                            <p>
+                               The initial burst to emulation on the web was about removing 
+                               the barrier to old software
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== Featires section End ========== -->
+    <!-- ========== Quick Overview section start ========== -->
+    <section id="overview" class="section-padding quick-overview">
+        <div class="container">
+            <div class="section-title-center">
+                <div class="row">
+                    <div class="col-md-10 col-lg-8 mx-auto">
+                        <p class="badge-text">Overview</p>
+                        <h3>Quick software overview</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row overview__wrapper">
+                <div class="col-12">
+                    <div class="overview-slide">
+                        <div class="swiper-wrapper pb-2">
+                        <!-- overview item start -->
+                        <div class="swiper-slide p-5px-lr">
+                            <a
+                            href="assets/images/software1.webp"
+                            class="glightbox2"
+                            data-glightbox=" description: .custom-desc1; descPosition: right;"
+                          >
+                            <img 
+                                class="img-fluid overview__wrapper__image"
+                                src="assets/images/software1.webp" 
+                                alt="image"
+                            />
+                            </a>
+                            <div class="glightbox-desc custom-desc1">
+                                <h3 class="mb-4 text-center">Installation</h3>
+                                <p>
+                                    Software articles should describe a tool likely to be of
+                                    broad utility that represents a significant advance over
+                                    previously published software (usually demonstrated by
+                                    direct comparison with available related software).
+                                </p>
+                                <P>
+                                    The software application/tool described in the manuscript
+                                    must be available for testing by reviewers in a way that
+                                    preserves their anonymity. If published, software
+                                    applications/tools must be freely available to any
+                                    researcher wishing to use them for non-commercial
+                                    purposes, without restrictions such as the need for a
+                                    material transfer agreement. Because web-links frequently
+                                    become broken, BMC strongly recommends that all software
+                                    applications/tools are included with the submitted
+                                    manuscript as additional files to ensure that the software
+                                    will continue to be available.
+                                </P>
+                                <p>
+                                    BMC recommends, but does not require, that the source code
+                                    of the software should be made available under a suitable
+                                    open-source license that will entitle other researchers to
+                                    further develop and extend the software if they wish to do
+                                    so. Typically, an archive of the source code of the
+                                    current version of the software should be included with
+                                    the submitted manuscript as a supplementary file.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- overview item end -->
+                        <!-- overview item start -->
+                        <div class="swiper-slide p-5px-lr">
+                            <a
+                            href="assets/images/software2.webp"
+                            class="glightbox2"
+                            data-glightbox=" description: .custom-desc1; descPosition: right;"
+                            >
+                            <img 
+                                class="img-fluid overview__wrapper__image"
+                                src="assets/images/software2.webp" 
+                                alt="image"
+                            />
+                            </a>
+                            <div class="glightbox-desc custom-desc2">
+                                <h3 class="mb-4 text-center">Setup app</h3>
+                                <p>
+                                    Software articles should describe a tool likely to be of
+                                    broad utility that represents a significant advance over
+                                    previously published software (usually demonstrated by
+                                    direct comparison with available related software).
+                                </p>
+                                <P>
+                                    The software application/tool described in the manuscript
+                                    must be available for testing by reviewers in a way that
+                                    preserves their anonymity. If published, software
+                                    applications/tools must be freely available to any
+                                    researcher wishing to use them for non-commercial
+                                    purposes, without restrictions such as the need for a
+                                    material transfer agreement. Because web-links frequently
+                                    become broken, BMC strongly recommends that all software
+                                    applications/tools are included with the submitted
+                                    manuscript as additional files to ensure that the software
+                                    will continue to be available.
+                                </P>
+                                <p>
+                                    BMC recommends, but does not require, that the source code
+                                    of the software should be made available under a suitable
+                                    open-source license that will entitle other researchers to
+                                    further develop and extend the software if they wish to do
+                                    so. Typically, an archive of the source code of the
+                                    current version of the software should be included with
+                                    the submitted manuscript as a supplementary file.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- overview item end -->
+                        <!-- overview item start -->
+                        <div class="swiper-slide p-5px-lr">
+                            <a
+                            href="assets/images/software3.webp"
+                            class="glightbox2"
+                            data-glightbox=" description: .custom-desc1; descPosition: right;"
+                            >
+                            <img 
+                                class="img-fluid overview__wrapper__image"
+                                src="assets/images/software3.webp" 
+                                alt="image"
+                            />
+                            </a>
+                            <div class="glightbox-desc custom-desc3">
+                                <h3 class="mb-4 text-center">Monetization</h3>
+                                <p>
+                                    Software articles should describe a tool likely to be of
+                                    broad utility that represents a significant advance over
+                                    previously published software (usually demonstrated by
+                                    direct comparison with available related software).
+                                </p>
+                                <P>
+                                    The software application/tool described in the manuscript
+                                    must be available for testing by reviewers in a way that
+                                    preserves their anonymity. If published, software
+                                    applications/tools must be freely available to any
+                                    researcher wishing to use them for non-commercial
+                                    purposes, without restrictions such as the need for a
+                                    material transfer agreement. Because web-links frequently
+                                    become broken, BMC strongly recommends that all software
+                                    applications/tools are included with the submitted
+                                    manuscript as additional files to ensure that the software
+                                    will continue to be available.
+                                </P>
+                                <p>
+                                    BMC recommends, but does not require, that the source code
+                                    of the software should be made available under a suitable
+                                    open-source license that will entitle other researchers to
+                                    further develop and extend the software if they wish to do
+                                    so. Typically, an archive of the source code of the
+                                    current version of the software should be included with
+                                    the submitted manuscript as a supplementary file.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- overview item end -->
+                        <!-- overview item start -->
+                        <div class="swiper-slide p-5px-lr">
+                            <a
+                            href="assets/images/software4.webp"
+                            class="glightbox2"
+                            data-glightbox=" description: .custom-desc1; descPosition: right;"
+                            >
+                            <img 
+                                class="img-fluid overview__wrapper__image"
+                                src="assets/images/software4.webp" 
+                                alt="image"
+                            />
+                            </a>
+                            <div class="glightbox-desc custom-desc4">
+                                <h3 class="mb-4 text-center">The Beginning</h3>
+                                <p>
+                                    Software articles should describe a tool likely to be of
+                                    broad utility that represents a significant advance over
+                                    previously published software (usually demonstrated by
+                                    direct comparison with available related software).
+                                </p>
+                                <P>
+                                    The software application/tool described in the manuscript
+                                    must be available for testing by reviewers in a way that
+                                    preserves their anonymity. If published, software
+                                    applications/tools must be freely available to any
+                                    researcher wishing to use them for non-commercial
+                                    purposes, without restrictions such as the need for a
+                                    material transfer agreement. Because web-links frequently
+                                    become broken, BMC strongly recommends that all software
+                                    applications/tools are included with the submitted
+                                    manuscript as additional files to ensure that the software
+                                    will continue to be available.
+                                </P>
+                                <p>
+                                    BMC recommends, but does not require, that the source code
+                                    of the software should be made available under a suitable
+                                    open-source license that will entitle other researchers to
+                                    further develop and extend the software if they wish to do
+                                    so. Typically, an archive of the source code of the
+                                    current version of the software should be included with
+                                    the submitted manuscript as a supplementary file.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- overview item end -->
+                        <!-- overview item start -->
+                        <div class="swiper-slide p-5px-lr">
+                            <a
+                            href="assets/images/software5.webp"
+                            class="glightbox2"
+                            data-glightbox=" description: .custom-desc1; descPosition: right;"
+                            >
+                            <img 
+                                class="img-fluid overview__wrapper__image"
+                                src="assets/images/software5.webp" 
+                                alt="image"
+                            />
+                            </a>
+                            <div class="glightbox-desc custom-desc5">
+                                <h3 class="mb-4 text-center">Installation</h3>
+                                <p>
+                                    Software articles should describe a tool likely to be of
+                                    broad utility that represents a significant advance over
+                                    previously published software (usually demonstrated by
+                                    direct comparison with available related software).
+                                </p>
+                                <P>
+                                    The software application/tool described in the manuscript
+                                    must be available for testing by reviewers in a way that
+                                    preserves their anonymity. If published, software
+                                    applications/tools must be freely available to any
+                                    researcher wishing to use them for non-commercial
+                                    purposes, without restrictions such as the need for a
+                                    material transfer agreement. Because web-links frequently
+                                    become broken, BMC strongly recommends that all software
+                                    applications/tools are included with the submitted
+                                    manuscript as additional files to ensure that the software
+                                    will continue to be available.
+                                </P>
+                                <p>
+                                    BMC recommends, but does not require, that the source code
+                                    of the software should be made available under a suitable
+                                    open-source license that will entitle other researchers to
+                                    further develop and extend the software if they wish to do
+                                    so. Typically, an archive of the source code of the
+                                    current version of the software should be included with
+                                    the submitted manuscript as a supplementary file.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- overview item end -->
+                        </div>
+                        <div class="swiper-pagination mt-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== Quick overview section Ends ========== -->
+    <!-- ========== Cta start ========== -->
+    <section
+        class="section-padding cta"
+        style="background-image: url(assets/images/software-cta.webp)"
+    >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="cta__content">
+                        <h2 class="display-4 mb-3">Trusted and Supported by many uers</h2>
+                        <p class="fs-5 mb-5">
+                            Preferring to go on writing binges, Strayed, who is the mother 
+                            of two small children, often ensconces herself in a hotel room 
+                            to burrow into her work for a few days or weeks.
+                        </p>
+                        <div class="position-relative">
+                            <a 
+                              href="https://www.youtube.com/watch?v=d2Q3e56iJGs"
+                              class="glightbox3 video-btn"
+                            >
+                                <i class="icofont-ui-play"></i>
+                            </a>
+                            <div class="promo-video">
+                                <div class="waves-block">
+                                    <div class="waves waves-1"></div>
+                                    <div class="waves waves-2"></div>
+                                    <div class="waves waves-3"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== Cta end ========== -->
+    <!-- ========== Platforms section start ========== -->
+    <section id="platforms" class="platforms section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="section-title-left">
+                <p class="badge-text">Join over 30,000+ businesses worldwide</p>
+                <h3>It's working with your favorite platforms</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <div class="platforms__single translateEffect2">
+                <div class="platforms__single--ico">
+                  <i class="icofont-brand-linux"></i>
+                </div>
+                <div class="platforms__single--title">Linux</div>
+              </div>
+            </div>
+  
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <div class="platforms__single translateEffect2">
+                <div class="platforms__single--ico">
+                  <i class="icofont-brand-windows"></i>
+                </div>
+                <div class="platforms__single--title">Windows</div>
+              </div>
+            </div>
+  
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <div class="platforms__single translateEffect2">
+                <div class="platforms__single--ico">
+                  <i class="icofont-brand-apple"></i>
+                </div>
+                <div class="platforms__single--title">Apple</div>
+              </div>
+            </div>
+  
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <div class="platforms__single translateEffect2">
+                <div class="platforms__single--ico">
+                  <i class="icofont-brand-android-robot"></i>
+                </div>
+                <div class="platforms__single--title">Android</div>
+              </div>
+            </div>
+  
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <div class="platforms__single translateEffect2">
+                <div class="platforms__single--ico">
+                  <i class="icofont-brand-wordpress"></i>
+                </div>
+                <div class="platforms__single--title">WordPress</div>
+              </div>
+            </div>
+  
+            <div class="col-lg-2 col-md-3 col-sm-6">
+              <div class="platforms__single translateEffect2">
+                <div class="platforms__single--ico">
+                  <i class="icofont-dropbox"></i>
+                </div>
+                <div class="platforms__single--title">Dropbox</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ========== Platforms section end ========== -->
+
+          <!-- ========== Pricing section start ========== -->
+    <section id="pricing" class="pricing section-padding bg-one">
+        <div class="container">
+          <div class="section-title-center">
+            <div class="row gx-xl-5">
+              <div class="col-md-10 col-lg-8 mx-auto">
+                <p class="badge-text">Choose your plan</p>
+                <h3>Flexible pricing plan</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-6 col-lg-4 pb-4 mb-5 mb-lg-0">
+              <div class="pricing__item translateEffect1">
+                <span class="pricing__item__tag">basic</span>
+                <div class="pricing__item__icon">
+                  <i class="icofont-royal"></i>
+                </div>
+                <h3 class="fs-1 mt-2">$65.00</h3>
+                <p class="pb-3">Monthly package</p>
+                <hr />
+                <div class="pricing__item__list">
+                  <ul class="pt-3">
+                    <li>
+                      <div class="pricing__item__list--ico">
+                        <i class="icofont-check"></i>
+                      </div>
+                      <p>social media marketing</p>
+                    </li>
+                    <li>
+                      <div class="pricing__item__list--ico">
+                        <i class="icofont-check"></i>
+                      </div>
+                      <p>5099 keywords</p>
+                    </li>
+                    <li>
+                      <div class="pricing__item__list--ico">
+                        <i class="icofont-check"></i>
+                      </div>
+                      <p>One way link bulding</p>
+                    </li>
+                    <li>
+                      <div class="pricing__item__list--ico">
+                        <i class="icofont-check"></i>
+                      </div>
+                      <p>10 free optimization</p>
+                    </li>
+                    <li>
+                      <div class="pricing__item__list--ico">
+                        <i class="icofont-check"></i>
+                      </div>
+                      <p>One year update</p>
+                    </li>
+                    <li>
+                      <div class="pricing__item__list--ico">
+                        <i class="icofont-check"></i>
+                      </div>
+                      <p>Content research</p>
+                    </li>
+                  </ul>
+                </div>
+                <a href="#" class="btn__primary">
+                  <span>Choose Plan <i class="icofont-arrow-right"></i></span>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 pb-4 mb-5 mb-lg-0">
+              <div class="pricing__item translateEffect1">
+                <span class="pricing__item__tag">STaNDERD</span>
+                <div class="pricing__item__icon">
+                  <i class="icofont-badge"></i>
+                </div>
+                <h2 class="fs-1 mt-2">$85.00</h2>
+                <p class="pb-3">Monthly package</p>
+                <hr />
+                <div class="pricing__item__list">
+                  <ul class="pt-3">
+                    <li>
+                      <div class="pricing__item__list--ico">
+                        <i class="icofont-check"></i>
+                      </div>
+                      <p>social media marketing</p>
+                    </li>
+                    <li>
+                      <div class="pricing__item__list--ico">
+                        <i class="icofont-check"></i>
+                      </div>
+                      <p>5099 keywords</p>
+                    </li>
+                    <li>
+                      <div class="pricing__item__list--ico">
+                        <i class="icofont-check"></i>
+                      </div>
+                      <p>One way link bulding</p>
+                    </li>
+                    <li>
+                      <div class="pricing__item__list--ico">
+                        <i class="icofont-check"></i>
+                      </div>
+                      <p>10 free optimization</p>
+                    </li>
+                    <li>
+                      <div class="pricing__item__list--ico">
+                        <i class="icofont-check"></i>
+                      </div>
+                      <p>One year update</p>
+                    </li>
+                    <li>
+                      <div class="pricing__item__list--ico">
+                        <i class="icofont-check"></i>
+                      </div>
+                      <p>Content research</p>
+                    </li>
+                  </ul>
+                </div>
+                <a href="#" class="btn__primary">
+                  <span>Choose Plan <i class="icofont-arrow-right"></i></span>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 pb-4">
+              <div class="pricing__item translateEffect1">
+                <span class="pricing__item__tag">premium</span>
+                <div class="pricing__item__icon">
+                  <i class="icofont-diamond"></i>
+                </div>
+                <h2 class="fs-1 mt-2">$99.99</h2>
+                <p class="pb-3">Monthly package</p>
+                <hr />
+                <div class="pricing__item__list">
+                  <ul class="pt-3">
+                    <li>
+                      <div class="pricing__item__list--ico">
+                        <i class="icofont-check"></i>
+                      </div>
+                      <p>social media marketing</p>
+                    </li>
+                    <li>
+                      <div class="pricing__item__list--ico">
+                        <i class="icofont-check"></i>
+                      </div>
+                      <p>5099 keywords</p>
+                    </li>
+                    <li>
+                      <div class="pricing__item__list--ico">
+                        <i class="icofont-check"></i>
+                      </div>
+                      <p>One way link bulding</p>
+                    </li>
+                    <li>
+                      <div class="pricing__item__list--ico">
+                        <i class="icofont-check"></i>
+                      </div>
+                      <p>10 free optimization</p>
+                    </li>
+                    <li>
+                      <div class="pricing__item__list--ico">
+                        <i class="icofont-check"></i>
+                      </div>
+                      <p>One year update</p>
+                    </li>
+                    <li>
+                      <div class="pricing__item__list--ico">
+                        <i class="icofont-check"></i>
+                      </div>
+                      <p>Content research</p>
+                    </li>
+                  </ul>
+                </div>
+                <a href="#" class="btn__primary">
+                  <span>Choose Plan <i class="icofont-arrow-right"></i></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ========== Pricing section end ========== -->
+          <!-- ========== Testimonial section start ========== -->
+    <section id="reviews" class="testimonial3 section-padding">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-5 mb-4 mb-md-0">
+              <img
+                class="img-fluid"
+                src="assets/images/testimonial.webp"
+                alt="image"
+              />
+            </div>
+            <div class="col-md-6 offset-md-1 testimonial3__content">
+              <div class="section-title-left">
+                <p class="badge-text">They say</p>
+                <h3>testimonial</h3>
+              </div>
+  
+              <div class="swiper testimonialSlider">
+                <div class="swiper-wrapper">
+                  <!-- Hero Slide 01 start -->
+                  <div class="swiper-slide testimonial3__slide">
+                    <div class="testimonial3__slide__content">
+                      <ul>
+                        <li><i class="icofont-star"></i></li>
+                        <li><i class="icofont-star"></i></li>
+                        <li><i class="icofont-star"></i></li>
+                        <li><i class="icofont-star"></i></li>
+                        <li><i class="icofont-star"></i></li>
+                      </ul>
+                      <p>
+                        On Monday, Bee demonstrated self-awareness about her own
+                        talk-show fury, having Beck on to, essentially, give a
+                        testimonial about the hazards of polarized political
+                        broadcasting.
+                      </p>
+                      <div class="user-info">
+                        <div class="user-info__image">
+                          <img src="assets/images/client2.webp" alt="Image" />
+                        </div>
+                        <div class="user-info__content">
+                          <h4>Sachin Diwar</h4>
+                          <p>CEO/Founder</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Hero Slide 01 end -->
+                  <!-- Hero Slide 02 start -->
+                  <div class="swiper-slide testimonial3__slide">
+                    <div class="testimonial3__slide__content">
+                      <ul>
+                        <li><i class="icofont-star"></i></li>
+                        <li><i class="icofont-star"></i></li>
+                        <li><i class="icofont-star"></i></li>
+                        <li><i class="icofont-star"></i></li>
+                        <li><i class="icofont-star"></i></li>
+                      </ul>
+                      <p>
+                        But as Henry’s staged testimonial suggests, it can also
+                        bring confusion as the patient attempts to make sense of
+                        the disjuncture between a song heard right now and a
+                        recollection have heard the song before.
+                      </p>
+                      <div class="user-info">
+                        <div class="user-info__image">
+                          <img src="assets/images/client3.webp" alt="Image" />
+                        </div>
+                        <div class="user-info__content">
+                          <h4>Sachin Diwar</h4>
+                          <p>CEO/Founder</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Hero Slide 02 end -->
+                  <!-- Hero Slide 03 start -->
+                  <div class="swiper-slide testimonial3__slide">
+                    <div class="testimonial3__slide__content">
+                      <ul>
+                        <li><i class="icofont-star"></i></li>
+                        <li><i class="icofont-star"></i></li>
+                        <li><i class="icofont-star"></i></li>
+                        <li><i class="icofont-star"></i></li>
+                        <li><i class="icofont-star"></i></li>
+                      </ul>
+                      <p>
+                        On Monday, Bee demonstrated self-awareness about her own
+                        talk-show fury, having Beck on to, essentially, give a
+                        testimonial about the hazards of polarized political
+                        broadcasting.
+                      </p>
+                      <div class="user-info">
+                        <div class="user-info__image">
+                          <img src="assets/images/client4.webp" alt="Image" />
+                        </div>
+                        <div class="user-info__content">
+                          <h4>Sachin Diwar</h4>
+                          <p>CEO/Founder</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Hero Slide 03 end -->
+                </div>
+                <div class="swiper-button-next slid-next"></div>
+                <div class="swiper-button-prev slid-prev"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ========== Testimonial section end ========== -->
+    <!-- ========== CTA section start ========== -->
+    <section id="cta" class="ctav2 bg-one">
+        <div class="container-fluid">
+          <div class="row m-0">
+            <div class="col-xl-7 col-lg-6">
+              <div
+                class="ctav2__video"
+                style="background-image: url(assets/images/it-solution-cta.webp)"
+              >
+                <a
+                  href="https://www.youtube.com/watch?v=d2Q3e56iJGs"
+                  class="glightbox3 video-btn"
+                >
+                  <i class="icofont-ui-play"></i
+                ></a>
+  
+                <div class="waves-block">
+                  <div class="waves wave-1"></div>
+                  <div class="waves wave-2"></div>
+                  <div class="waves wave-3"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-5 col-lg-6">
+              <div class="ctav2__content">
+                <div class="section-title-left">
+                  <h3 class="mb-4">This app can make your life easy.</h3>
+                  <p>
+                    While other people may not know, in my case, if I just had the
+                    time, I'd be buried over my head in things I'd want to do. I
+                    don't have the time to not think about things I need or want.
+                  </p>
+                </div>
+  
+                <div class="ctav2__content--counter mb-3 mb-md-5">
+                  <div class="ctav2__content--counter--single">
+                    <h3><span class="odometer" data-count="18"></span>K</h3>
+                    <p>Users</p>
+                  </div>
+  
+                  <div class="ctav2__content--counter--single">
+                    <h3><span class="odometer" data-count="780"></span>+</h3>
+                    <p>Projects</p>
+                  </div>
+                  <div class="ctav2__content--counter--single">
+                    <h3><span class="odometer" data-count="100"></span>%</h3>
+                    <p>Satisfaction</p>
+                  </div>
+                </div>
+                <a class="btn__primary" href="#"><span>Let's talk</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ========== CTA section end ========== -->
+    <!-- ========== Faq section start ========== -->
+    <section id="faq" class="section-padding faq">
+        <div class="container">
+            <div class="row gx-xl-5">
+            <div class="col-lg-6">
+                <div class="section-title-left">
+                <p class="badge-text">Frequently asked questions</p>
+                <h3 class="mb-4">Our app gives you the best result</h3>
+                <p class="mb-4">
+                    Over points before unpleasant lady attending considered nearer
+                    projecting noisy praise listening. Sister principle delicate
+                    this reached attempted companions husband what unwilling regular
+                    departure suppose excuse.
+                </p>
+                <a href="#contact" class="btn__primary smooth">
+                    <span>Let's talk</span>
+                </a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div
+                class="accordion accordion-flush faqs-accordion"
+                id="accordionFlushExample"
+                >
+                <!-- accordion start -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                    <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="true"
+                        aria-controls="flush-collapseOne"
+                    >
+                        Where can i get analytics help?
+                    </button>
+                    </h2>
+                    <div
+                    id="flush-collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample"
+                    >
+                    <p class="accordion-body text-secondary">
+                        And they’re appropriate words, given how the hype for
+                        Disney’s reboot of the franchise has mainly revolved around
+                        all the unanswered questions about what actually happens in
+                        this film (other than J.J.
+                    </p>
+                    </div>
+                </div>
+                <!-- accordion end -->
+                <!-- accordion start -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                    <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseTwo"
+                    >
+                        How much does data analytics costs?
+                    </button>
+                    </h2>
+                    <div
+                    id="flush-collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample"
+                    >
+                    <p class="accordion-body text-secondary">
+                        Snatched was written by Katie Dippold, who also wrote the
+                        very of-the-moment movies The Heat and the all-women reboot
+                        of Ghostbusters, and was directed by Jonathan Levine (The
+                        Wackness, 50/50).
+                    </p>
+                    </div>
+                </div>
+                <!-- accordion end -->
+                <!-- accordion start -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                    <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseThree"
+                    >
+                        What kind of data is needed for analysis?
+                    </button>
+                    </h2>
+                    <div
+                    id="flush-collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample"
+                    >
+                    <p class="accordion-body text-secondary">
+                        This has most certainly gone thru my head RT
+                        @analogtransmit: Kickstarter for a MEN OF A CERTAIN AGE
+                        finale movie.cc @tvoti Meanwhile, Joss Whedon, who is now
+                        embedded with Marvel and Disney, shot down hopes of any sort
+                        of Firefly reboot.
+                    </p>
+                    </div>
+                </div>
+                <!-- accordion end -->
+                <!-- accordion start -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                    <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseFour"
+                    >
+                        Where can i get analytics help?
+                    </button>
+                    </h2>
+                    <div
+                    id="flush-collapseFour"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingFour"
+                    data-bs-parent="#accordionFlushExample"
+                    >
+                    <p class="accordion-body text-secondary">
+                        “Nobody gave a shit about the Jump Street reboot,” Deputy
+                        Chief Hardy reminded his charges in his precinct-room pep
+                        talk, “but you got lucky.” Remarkably, 22 Jump Street
+                        appears wicked and winking enough to extend that lucky
+                        streak.
+                    </p>
+                    </div>
+                </div>
+                <!-- accordion end -->
+
+                <!-- accordion start -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingSix">
+                    <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseSix"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseSix"
+                    >
+                        What kind of data is needed for analysis?
+                    </button>
+                    </h2>
+                    <div
+                    id="flush-collapseSix"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingSix"
+                    data-bs-parent="#accordionFlushExample"
+                    >
+                    <p class="accordion-body text-secondary">
+                        It was also the first Trek series to feature an African
+                        American commanding officer—a legacy that has been continued
+                        in CBS’s recently debuted reboot Star Trek: Discovery, which
+                        stars Sonequa Martin-Green as the show’s first black female
+                        lead.
+                    </p>
+                    </div>
+                </div>
+                <!-- accordion end -->
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== Faq section end ========== -->
+    <!-- ========== Blog section start ========== -->
+    <section id="blog" class="blogv2 section-padding bg-one">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-lg-8 mx-auto">
+              <div class="section-title-center">
+                <p class="badge-text">Latest article</p>
+                <h3>Most popular blog & stories</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Start single blog item -->
+            <div class="col-lg-4 col-md-6 col-sm-6 mb-4 mb-lg-0">
+              <div class="blogv2__single translateEffect1">
+                
+                <div class="blogv2__single--image">
+                      <a href="details-right-sidebar.html">
+                        <img
+                          src="assets/images/blog/blog10.webp"
+                          alt="Blog Image"
+                        />
+                      </a>
+                    </div>
+                <div class="blogv2__single--content">
+                  <h2>
+                        <a href="details-right-sidebar.html"
+                          >10 secrets to connenct with your clients easily</a
+                        >
+                      </h2>
+                  <p>
+                    Wisdom is the mother of solutions. You cannot upgrade in
+                    wisdom and lack solutions and you cannot have a wisdom and be
+                    stranded in any challenge you face.
+                  </p>
+                  <div class="blogv2__single--content--meta">
+                    <ul>
+                      <li>
+                        <i class="icofont-user-alt-4"></i>
+                        <a href="#">John deo</a>
+                      </li>
+                      <li>
+                        <i class="icofont-calendar"></i>
+                        <a href="#">Aug 8, 2022</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End single blog item -->
+  
+            <!-- Start single blog item -->
+            <div class="col-lg-4 col-md-6 col-sm-6 mb-4 mb-lg-0">
+              <div class="blogv2__single translateEffect1">
+                
+                <div class="blogv2__single--image">
+                  <img src="assets/images/blog/blog11.webp" alt="Blog Image" />
+                </div>
+                <div class="blogv2__single--content">
+                  <h2>
+                        <a href="details-right-sidebar.html"
+                          >10 secrets to connenct with your clients easily</a
+                        >
+                      </h2>
+                  <p>
+                    Wisdom is the mother of solutions. You cannot upgrade in
+                    wisdom and lack solutions and you cannot have a wisdom and be
+                    stranded in any challenge you face.
+                  </p>
+                  <div class="blogv2__single--content--meta">
+                    <ul>
+                      <li>
+                        <i class="icofont-user-alt-4"></i>
+                        <a href="#">John deo</a>
+                      </li>
+                      <li>
+                        <i class="icofont-calendar"></i>
+                        <a href="#">Aug 8, 2022</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End single blog item -->
+  
+            <!-- Start single blog item -->
+            <div class="col-lg-4 mt-3 mt-lg-0 blogv2__right--posts">
+              <div class="blogv2__single blogv2__single--hr translateEffect2">
+                
+                <div class="blogv2__single--image">
+                      <a href="details-right-sidebar.html">
+                        <img
+                          src="assets/images/blog/blog10.webp"
+                          alt="Blog Image"
+                        />
+                      </a>
+                    </div>
+                <div class="blogv2__single--content">
+                  <h2>
+                        <a href="details-right-sidebar.html"
+                          >10 secrets to connenct with your clients easily</a
+                        >
+                      </h2>
+                  <div class="blogv2__single--content--meta">
+                    <ul>
+                      <li>
+                        <i class="icofont-user-alt-4"></i>
+                        <a href="#">John deo</a>
+                      </li>
+                      <li>
+                        <i class="icofont-calendar"></i>
+                        <a href="#">Aug 8, 2022</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="blogv2__single blogv2__single--hr translateEffect2">
+                
+                <div class="blogv2__single--image">
+                  <img src="assets/images/blog/blog11.webp" alt="Blog Image" />
+                </div>
+                <div class="blogv2__single--content">
+                  <h2>
+                        <a href="details-right-sidebar.html"
+                          >10 secrets to connenct with your clients easily</a
+                        >
+                      </h2>
+                  <div class="blogv2__single--content--meta">
+                    <ul>
+                      <li>
+                        <i class="icofont-user-alt-4"></i>
+                        <a href="#">John deo</a>
+                      </li>
+                      <li>
+                        <i class="icofont-calendar"></i>
+                        <a href="#">Aug 8, 2022</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="blogv2__single blogv2__single--hr translateEffect2">
+                
+                <div class="blogv2__single--image">
+                  <img src="assets/images/blog/blog12.webp" alt="Blog Image" />
+                </div>
+                <div class="blogv2__single--content">
+                  <h2>
+                        <a href="details-right-sidebar.html"
+                          >10 secrets to connenct with your clients easily</a
+                        >
+                      </h2>
+                  <div class="blogv2__single--content--meta">
+                    <ul>
+                      <li>
+                        <i class="icofont-user-alt-4"></i>
+                        <a href="#">John deo</a>
+                      </li>
+                      <li>
+                        <i class="icofont-calendar"></i>
+                        <a href="#">Aug 8, 2022</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="blogv2__single blogv2__single--hr translateEffect2">
+                
+                <div class="blogv2__single--image">
+                      <a href="details-right-sidebar.html">
+                        <img
+                          src="assets/images/blog/blog10.webp"
+                          alt="Blog Image"
+                        />
+                      </a>
+                    </div>
+                <div class="blogv2__single--content">
+                  <h2>
+                        <a href="details-right-sidebar.html"
+                          >10 secrets to connenct with your clients easily</a
+                        >
+                      </h2>
+                  <div class="blogv2__single--content--meta">
+                    <ul>
+                      <li>
+                        <i class="icofont-user-alt-4"></i>
+                        <a href="#">John deo</a>
+                      </li>
+                      <li>
+                        <i class="icofont-calendar"></i>
+                        <a href="#">Aug 8, 2022</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="blogv2__single blogv2__single--hr translateEffect2">
+                
+                <div class="blogv2__single--image">
+                      <a href="details-right-sidebar.html">
+                        <img
+                          src="assets/images/blog/blog10.webp"
+                          alt="Blog Image"
+                        />
+                      </a>
+                    </div>
+                <div class="blogv2__single--content">
+                  <h2>
+                        <a href="details-right-sidebar.html"
+                          >10 secrets to connenct with your clients easily</a
+                        >
+                      </h2>
+                  <div class="blogv2__single--content--meta">
+                    <ul>
+                      <li>
+                        <i class="icofont-user-alt-4"></i>
+                        <a href="#">John deo</a>
+                      </li>
+                      <li>
+                        <i class="icofont-calendar"></i>
+                        <a href="#">Aug 8, 2022</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End single blog item -->
+          </div>
+        </div>
+      </section>
+    <!-- ========== Blog section end ========== -->
+        <!-- ========== Contact section start ========== -->
+        <section id="contact" class="contact section-padding">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto">
+                  <div class="section-title-center">
+                    <p class="badge-text">Contact us</p>
+                    <h3>Request a free consultation</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="row gx-xl-5">
+                <div class="col-xl-10 offset-xl-1 contact__wrapper">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                      <div class="contact__address">
+                        <div class="contact__address--single">
+                          <div class="contact__address--single--icon">
+                            <i class="icofont-location-pin"></i>
+                          </div>
+                          <div class="contact__address--single--content">
+                            <h4>Location</h4>
+                            <p>
+                              70 Washington Square South, New York, NY, United States
+                            </p>
+                          </div>
+                        </div>
+      
+                        <div class="contact__address--single">
+                          <div class="contact__address--single--icon">
+                            <i class="icofont-phone"></i>
+                          </div>
+                          <div class="contact__address--single--content">
+                            <h4>Make a call</h4>
+                            <p>
+                              +121 25254 544788<br />
+                              +121 25254 544789
+                            </p>
+                          </div>
+                        </div>
+                        <div class="contact__address--single">
+                          <div class="contact__address--single--icon">
+                            <i class="icofont-clock-time"></i>
+                          </div>
+                          <div class="contact__address--single--content">
+                            <h4>Working Hours</h4>
+                            <p>
+                              Monday-friday: 9:00- 06:00<br />Saturday-Sunday: Holiday
+                            </p>
+                          </div>
+                        </div>
+      
+                        <div class="contact__address--single">
+                          <div class="contact__address--single--icon">
+                            <i class="icofont-email"></i>
+                          </div>
+                          <div class="contact__address--single--content">
+                            <h4>Send an email</h4>
+                            <p>
+                              support@biznes.com<br />
+                              hello@biznes.com
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-8 col-md-6">
+                      <div class="contact__form">
+                        <form
+                          id="contact-form"
+                          method="post"
+                          action="php/message.php"
+                        >
+                          <div class="message col">
+                            <p class="email-loading alert alert-warning">
+                              <img
+                                src="assets/images/loading.gif"
+                                alt="image"
+                              />&nbsp;&nbsp;&nbsp;Sending...
+                            </p>
+                            <p class="email-success alert alert-success">
+                              <i class="icon icon-icon-check-alt2"></i> Your quote has
+                              successfully been sent.
+                            </p>
+                            <p class="email-failed alert alert-danger">
+                              <i class="icon icon-icon-close-alt2"></i> Something went
+                              wrong!
+                            </p>
+                          </div>
+                          <div class="mb13">
+                            <label for="contact-name">Name</label>
+                            <input
+                              name="name"
+                              class="contact-name"
+                              id="contact-name"
+                              type="text"
+                              placeholder="Your Name"
+                              required=""
+                            />
+                          </div>
+                          <div class="mb13">
+                            <label for="contact-name">Email</label>
+                            <input
+                              name="email"
+                              class="contact-email"
+                              id="contact-email"
+                              type="email"
+                              placeholder="Your Email"
+                              required=""
+                            />
+                          </div>
+                          <div class="mb13">
+                            <label for="contact-name">Subject</label>
+                            <input
+                              name="subject"
+                              class="contact-subject"
+                              id="contact-subject"
+                              type="text"
+                              placeholder="Subject"
+                              required=""
+                            />
+                          </div>
+                          <div class="mb30">
+                            <label for="contact-name">Message</label>
+                            <textarea
+                              name="message"
+                              class="contact-message"
+                              id="contact-message"
+                              placeholder="Your Message"
+                              required=""
+                            ></textarea>
+                          </div>
+                          <button class="btn__primary">
+                            <span>Send Now</span>
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- ========== Contact section end ========== -->
+          <!-- ========== Footer section start ========== -->
+          <section class="footer2 footer">
+            <div class="container">
+              <div class="footer-padding">
+                <div class="row gx-xl-5 align-items-center">
+                  <div class="col-md-6 col-xl-6 mb-4 mb-xl-0">
+                    <div class="footer__title">
+                      <h3 class="display-6 mb-3">Join our newsletter</h3>
+                      <p>
+                        Resources advice avoid trees declared particular offended
+                        others anxious husband chicken miles great account.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-xl-6">
+                    <form action="assets/subscribe/subscribe.php" id="subscribe">
+                      <div class="footer__subscribe">
+                        <input
+                          type="email"
+                          name="email"
+                          placeholder="Email"
+                          id="subscriber-email"
+                          required=""
+                        />
+                        <button class="btn__primary" id="subscribe-button">
+                          <span>Subscribe</span>
+                        </button>
+                      </div>
+                      <div class="result">
+                        <p class="success-msg">
+                          <i class="icofont-check"></i> Your email has been stored!
+                        </p>
+                        <p class="error-msg">
+                          <i class="icofont-close"></i> Sorry! Something went wrong!
+                        </p>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <hr class="p-0 m-0" />
+              <div class="row">
+                <div class="footer__bottom">
+                  <p>
+                    &copy; 2023 All right reserved.
+                  </p>
+                  <ul class="footer__social-icon">
+                    <li>
+                      <a href="#"
+                        ><i class="icofont-linkedin"></i
+                      ></a>
+                    </li>
+      
+                    <li>
+                      <a href="#"
+                        ><i class="icofont-twitter"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="icofont-instagram"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="icofont-brand-whatsapp"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="icofont-facebook"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- ========== Footer section end ========== -->
+    <!--====== jquery js ======-->
+    <script src="assets/js/jquery.min.js"></script>
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--====== One page nav ======-->
+    <script src="assets/js/onepageNav.js"></script>
+    <!--====== Appear js ======-->
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <!--====== Odometer js ======-->
+    <script src="assets/js/odometer.min.js"></script>
+    <!--====== GLightbox nav ======-->
+    <script src="assets/js/glightbox.min.js"></script>
+    <!--====== Swiper js ======-->
+    <script src="assets/js/swiper.min.js"></script>
+    <!--====== Ajaxchimp js ======-->
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <!--====== Custom js ======-->
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>

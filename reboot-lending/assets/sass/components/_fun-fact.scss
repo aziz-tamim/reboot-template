@@ -1,0 +1,57 @@
+.fun-fact {
+    &__image {
+        position: relative;
+        &--wrap {
+            box-shadow: 2px 0px 15px 5px $color-shadow;
+            border-radius: 10px;
+            background-color: $color-light;
+            padding: 20px;
+
+            img {
+                border-radius: 10px;
+                height: 500px;
+                object-fit: cover;
+                @include respond(phone) {
+                    height: 400px;
+                }
+            }
+        }
+        .video-btn {
+            color: $color-light;
+            background-color: $color-primary;
+            left: 50%;
+        }
+        .waves-block .waves {
+            background-color: $color-primary;
+            left: 50%;
+        }
+    }
+    &__card {
+        width: 800px;
+        background: $color-light;
+        padding: 20px 0;
+        isolation: isolate;
+        box-shadow: 2px 0px 15px 5px $color-shadow;
+        border-radius: 5px;
+        position: relative;
+        z-index: 1;
+
+        @include respond(laptop) {
+            width: 100%;
+        }
+    }
+}
+
+///// Dark VERSION /////
+.theme-dark {
+    .fun-fact {
+        background-color: $color-secondary;
+        &__card {
+            background-color: $color-dark-primary;
+        }
+        &__item,
+        &__image--wrap {
+            background-color: $color-dark-primary;
+        }
+    }
+}

@@ -1,0 +1,164 @@
+/*============
+    OVERVIEW
+==============*/
+.overview {
+    &__content {
+        border-radius: 15px;
+        padding: 60px 30px 30px;
+        background-color: $color-tertiary;
+        color: $color-secondary;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        position: relative;
+        overflow: hidden;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $color-primary;
+            transform: scale(0);
+            transform-origin: top;
+            transition: transform 0.5s;
+        }
+
+        &:hover::before {
+            border-radius: 15px;
+            transform: scaleY(1);
+            transform-origin: bottom;
+            transition: transform 0.5s;
+        }
+
+        &--title {
+            h2 {
+                color: $color-secondary;
+                opacity: 0.2;
+                margin-bottom: 5px;
+                font-size: 40px;
+                transition: 0.5s;
+            }
+            h3 {
+                position: relative;
+                color: $color-secondary;
+                margin-top: -30px;
+                margin-bottom: 20px;
+                font-size: 22px;
+                transition: 0.5s;
+            }
+            p {
+                position: relative;
+                transition: 0.5s;
+                z-index: 2;
+            }
+        }
+        &:hover {
+            h2 {
+                opacity: 1;
+                color: $color-light;
+                transform: translateY(-30px);
+            }
+            h3,
+            p {
+                color: $color-light;
+            }
+        }
+    }
+}
+
+.overview.bg-one {
+    .overview__content {
+        background-color: $color-light;
+    }
+}
+
+//// DARK VERSION /////
+.theme-dark {
+    .overview {
+        background-color: $color-secondary;
+        &__content {
+            background-color: $color-secondary;
+            color: $color-light;
+            &--title {
+                h2,
+                h3 {
+                    color: $color-light;
+                }
+            }
+        }
+    }
+    .overview.bg-one {
+        .overview__content {
+            background-color: $color-dark-primary;
+        }
+    }
+}
+
+.quick-overview {
+    .overview__wrapper {
+        overflow: hidden;
+        &__image {
+            border-radius: 5px;
+
+            background: $color-light;
+            padding: 10px;
+            border: 1px solid $color-shadow;
+        }
+    }
+    .swiper-pagination {
+        .swiper-pagination-bullet {
+            background-color: $color-primary;
+            transition: 0.4s;
+            padding: 5px;
+            &.swiper-pagination-bullet-active {
+                width: 30px;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+.desc-right .gslide-image img {
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+}
+
+.gslide-desc {
+    color: $color-secondary;
+    h3 {
+        color: $color-primary;
+    }
+}
+
+@include respond(laptop) {
+    .desc-right .gslide-image img {
+        max-width: 490px;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+///// Dark version /////
+.theme-dark {
+    .quick-overview {
+        background-color: $color-dark-primary;
+        .swiper-pagination-bullet {
+            color: $color-light;
+            background-color: $color-light;
+            opacity: 1;
+        }
+        .swiper-pagination-bullet-active {
+            background-color: $color-primary;
+        }
+    }
+
+    .gdesc-inner {
+        background-color: $color-secondary;
+        color: $color-light;
+        h3, p {
+            color: $color-light;
+        }
+    }
+}

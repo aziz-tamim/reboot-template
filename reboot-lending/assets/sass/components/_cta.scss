@@ -1,0 +1,312 @@
+/*===============
+    CTA VERSION 01
+===============*/
+.cta {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    isolation: isolate;
+    &:after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: $color-secondary;
+        opacity: 0.8;
+    }
+    &__content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        z-index: 1;
+        color: $color-light;
+        h2 {
+          color: $color-light;
+        }
+    }
+    .video-btn {
+        position: inherit;
+        background-color: $color-primary;
+        color: $color-light;
+        margin-top: 0;
+    }
+    .waves-block .waves {
+        top: 0;
+        margin-top: -15px;
+        background-color: $color-primary;
+    }
+}
+
+///// DARK VERSION /////
+.theme-dark {
+    .cta3 {
+        background-image: none;
+        background-color: $color-dark-primary;
+        &__wrapper {
+            background-color: $color-secondary;
+            &__content {
+                p {
+                    color: $color-light;
+                }
+                h5 {
+                    span {
+                        color: $color-light;
+                    }
+                }
+                h6 {
+                    color: $color-light;
+                }
+            }
+        }
+        &__counter {
+            background-color: $color-dark-primary;
+            box-shadow: 5px 5px 0px 0px $color-primary;
+            position: relative;
+            z-index: 1;
+            max-width: 90%;
+            margin: 0 auto;
+            margin-top: -50px;
+            padding: 30px 20px;
+            border-radius: 10px;
+        }
+    }
+
+    ///// DARK VERSION /////
+    .theme-dark {
+        .cta3 {
+            background-image: none;
+            background-color: $color-secondary;
+            &__wrapper {
+                background-color: $color-secondary;
+                &__content {
+                    h5 {
+                        span {
+                            color: $color-light;
+                        }
+                    }
+                    h6 {
+                        color: $color-light;
+                    }
+                    p {
+                        color: $color-light;
+                    }
+                }
+            }
+            &__counter {
+                background-color: $color-dark-primary
+            }
+        }
+    }
+}
+
+/*==============
+     CTA VERSION 02 
+===============*/
+.ctav2 {
+    overflow: hidden;
+    position: relative;
+    &__video {
+        height: 100%;
+        position: relative;
+        z-index: 1;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: $color-secondary;
+        &::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: '';
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+        }
+        @include respond(laptop) {
+            height: 450px;
+            margin-top: 60px;
+        }
+    }
+    &__content {
+        padding: 80px 90px 80px 60px;
+        @include respond(desktop) {
+            padding: 80px 40px 80px 60px;
+        }
+        @include respond(laptop) {
+            padding: 30px 0px 60px 0px;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        @include respond(tablet) {
+            max-width: 540px;
+            margin: 0 auto;
+        }
+        @include respond(mini) {
+            text-align: center;
+        }
+        &--counter  {
+            display: grid;
+            grid-gap: 15px;
+            grid-template-columns: 1fr 1fr 1fr;
+            &--single {
+                background: $color-light;
+                box-shadow: 2px 0px 15px 5px $color-shadow;
+                padding: 20px;
+                border-radius: 5px;
+            }
+            @include respond(mini) {
+                display: block;
+                &--single {
+                    width: 100%;
+                    &:not(:last-child) {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+    // container adjust
+    @media only screen and (min-width: 1400px) {
+        .container-fluid {
+            padding-right: calc((100% - 1320px) / 2 + 12px);
+            padding-left: 0;
+        }
+    }
+}
+.bg-one {
+    .ctav2__content--counter--single {
+        background-color: $color-light;
+    }
+}
+
+///// CTA 2 DARK VERSION /////
+.theme-dark {
+    .ctav2 {
+        background-color: $color-dark-primary;
+        &__content {
+            &--counter {
+                &--single {
+                    background: $color-secondary;
+                }
+            }
+        }
+    }
+    .bg-one {
+        .ctav2__content--counter--single {
+            background-color: $color-secondary;
+        }
+    }
+}
+
+/*===============
+    CTA CERSION 03
+===============*/
+.cta3 {
+    &__wrapper {
+        background-color: $color-tertiary;
+        padding: 50px;
+        border-radius: 10px;
+        position: relative;
+        img {
+            border-radius: 10px;
+        }
+        &__content {
+            h5 {
+                i {
+                    font-size: 30px;
+                    background-color: $color-primary;
+                    color: $color-tertiary;
+                    padding: 10px;
+                    border-radius: 50%;
+                    display: inline-block;
+                }
+                span {
+                    font-size: 30px;
+                }
+            }
+            h6 {
+                font-size: 30px;
+            }
+            @include respond(tablet) {
+                text-align: center;
+            }
+        }
+    }
+    &__counter {
+        position: relative;
+        z-index: 1;
+        max-width: 90%;
+        margin: 0 auto;
+        margin-top: -30px;
+        padding: 30px 20px;
+        background-color: $color-light;
+        border-radius: 10px;
+        box-shadow: 2px 0px 15px 5px $color-shadow;
+    }
+}
+
+///// DARK VERSION /////
+.theme-dark {
+    .cta3 {
+        background-image: none;
+        background-color: $color-dark-primary;
+        &__wrapper {
+            background-color: $color-secondary;
+            &__content {
+                p {
+                    color: $color-light;
+                }
+                h5 {
+                    span {
+                        color: $color-light;
+                    }
+                }
+                h6 {
+                    color: $color-light;
+                }
+            }
+        }
+        &__counter {
+            background-color: $color-shadow;
+            box-shadow: 5px 5px 0px 0px $color-primary;
+            position: relative;
+            z-index: 1;
+            max-width: 90%;
+            margin: 0 auto;
+            margin-top: -50px;
+            padding: 30px 20px;
+            border-radius: 10px;
+        }
+    }
+
+    ///// DARK VERSION /////
+    .theme-dark {
+        .cta3 {
+            background-image: none;
+            background-color: $color-secondary;
+            &__wrapper {
+                background-color: $color-secondary;
+                &__content {
+                    h5 {
+                        span {
+                            color: $color-light;
+                        }
+                    }
+                    h6 {
+                        color: $color-light;
+                    }
+                    p {
+                        color: $color-light;
+                    }
+                }
+            }
+            &__counter {
+                background-color: $color-dark-primary;
+            }
+        }
+    }
+}

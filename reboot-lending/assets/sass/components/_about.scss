@@ -1,0 +1,403 @@
+/*===============
+  ABOUT 
+===============*/
+.about {
+    &__image {
+      position: relative;
+      padding-left: 40px;
+      isolation: isolate;
+      height: 100%;
+      display: grid;
+      align-content: end;
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 150px;
+        width: 12px;
+        border-radius: 5px;
+        background: $color-primary;
+      }
+      img {
+        border-radius: 5px;
+      }
+      .circle {
+        z-index: -1;
+        left: -50px;
+        animation: moveCircles 10s linear infinite alternate;
+        top: 100px;
+        @include respond(tablet) {
+          display: none;
+        }
+      }
+    }
+  
+    &__content {
+      .col-md-6 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+      &--ico {
+        font-size: 45px;
+        line-height: 45px;
+        color: $color-primary;
+        i {
+          transition: 0.4s;
+        }
+      }
+      &--singleTop {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        grid-gap: 5px;
+        margin-bottom: 15px;
+      }
+      &--single {
+        position: relative;
+        transition: all 0.4s;
+        padding: 25px 20px;
+        box-shadow: 2px 0px 15px 5px $color-shadow;
+        border-radius: 5px;
+        overflow: hidden;
+        height: 100%;
+        background-color: $color-light;
+        isolation: isolate;
+        &:before {
+          content: '';
+          height: 0;
+          background-color: $color-primary;
+          position: absolute;
+          inset: 0;
+          transition: 0.6s;
+          z-index: -1;
+        }
+        &:hover:before {
+          height: 100%;
+        }
+        &:hover {
+          i,
+          h3,
+          p {
+            color: $color-light;
+          }
+        }
+        h3 {
+          font-size: 22px;
+          transition: 0.4s;
+        }
+        p {
+          margin-bottom: 0px;
+          transition: 0.4s;
+        }
+      }
+      ul {
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: repeat(3, 1fr);
+  
+        @include respond(laptop) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+  
+        @include respond(tablet) {
+          grid-template-columns: repeat(1, 1fr);
+        }
+        li {
+          p {
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+  
+  /////  DARK VERSION /////
+  .theme-dark {
+    .about {
+      background-color: $color-dark-primary;
+      &__content--single {
+        background-color: $color-secondary;
+      }
+    }
+}
+
+/*===============
+  ABOUT 2
+===============*/
+.about2 {
+  &__items {
+    &--single {
+      position: relative;
+      padding-left: 30px;
+      &--icon {
+        color: $color-primary;
+        position: absolute;
+        font-size: 22px;
+        line-height: 0;
+        left: 0;
+      }
+      margin-bottom: 20px;
+      h3 {
+        font-size: 20px;
+        margin-bottom: 12px;
+      }
+      p:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__image {
+    position: relative;
+    padding-bottom: 150px;
+    z-index: 1;
+
+    @include respond(phone) {
+      padding-bottom: 0px;
+    }
+    &--one,
+    &--two {
+      border-radius: 5px;
+      background: $color-light;
+      box-shadow: 0 10px 60px 0 $color-shadow;
+      padding: 10px;
+    }
+    &--one {
+      margin-left: auto;
+      max-width: 450px;
+      display: block;
+      height: 500px;
+      object-fit: cover;
+      @include respond(phone) {
+        max-width: 100%;
+      }
+    }
+    &--two {
+      position: absolute;
+      bottom: 0;
+      right: 270px;
+      z-index: 1;
+      max-width: 350px;
+      height: 400px;
+      object-fit: cover;
+      @include respond(big-desktop) {
+        right: 230px;
+      }
+      @include respond(desktop) {
+        max-width: 300px;
+        height: 300px;
+        right: 180px;
+      }
+      @include respond(laptop) {
+        max-width: 350px;
+        right: 300px;
+      }
+      @include respond(tablet) {
+        max-width: 350px;
+        right: 250px;
+      }
+      @include respond(phone) {
+        width: 250px;
+        right: auto;
+        bottom: -30px;
+      }
+      @include respond(mini) {
+        width: 200px;
+        right: auto;
+        bottom: 0px;
+        height: 250px;
+      }
+      @include respond(extraMini) {
+        display: none;
+      }
+    }
+    &--promo {
+      position: absolute;
+      bottom: 70px;
+      right: 200px;
+      background-color: $color-primary;
+      padding: 10px 15px;
+      box-shadow: 0 4px 15px $color-shadow;
+      z-index: 1;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      border: 3px solid $color-light;
+      color: $color-light;
+      border-radius: 15px;
+      animation: upDown 3s linear infinite alternate;
+      @include respond(big-desktop) {
+        right: 120px;
+      }
+      @include respond(desktop) {
+        right: 100px;
+        padding: 15px;
+      }
+      @include respond(phone) {
+        width: 230px;
+        bottom: -40px;
+        right: 50px
+      }
+      &--ico {
+        font-size: 28px;
+      }
+      &--text {
+        h3 {
+          color: $color-light;
+        }
+      }
+    }
+  }
+}
+
+//// Dark Version /////
+.theme-dark {
+  .about2 {
+    background-color: $color-dark-primary;
+  }
+  .bg-one.about2 {
+    background-color: $color-secondary;
+  }
+}
+
+/*============
+  ABOUT 3
+=============*/
+.about3 {
+  &__image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    img {
+      border-radius: 50%;
+      padding: 5px;
+      border: 2px solid $color-primary;
+      width: 550px;
+      height: 550px;
+      @include respond(desktop) {
+        width: 470px;
+        height: 470px;
+      }
+      @include respond(phone) {
+        width: 370px;
+        height: 370px;
+      }
+      @include respond(mini) {
+        width: 300px;
+        height: 300px;
+      }
+    }
+    &__brand {
+      position: absolute;
+      padding: 10px;
+      background-color: $color-light;
+      width: 230px;
+      height: 86px;
+      box-shadow: 2px 0px 15px 5px $color-shadow;
+      animation: upDown 3s linear infinite alternate;
+      right: 20px;
+      bottom: 50px;
+      border-radius: 5px;
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      &--trust {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        padding-left: 5px;
+        border-left: 1px solid $color-shadow;
+      }
+      &--rating {
+        padding-right: 5px;
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        &--percent {
+          font-weight: 700;
+          font-size: 18px;
+        }
+        &--stars {
+          display: block;
+          font-size: 12px;
+          color: #fed455;
+        }
+        &--count {
+          font-size: 10px;
+        }
+      }
+      @include respond(desktop) {
+        left: -15px;
+      }
+      @include respond(laptop) {
+        left: 100px;
+        bottom: 5%;
+      }
+      @include respond(tablet) {
+        left: 55px;
+      }
+      @include respond(phone) {
+        font-size: 14px;
+        width: 230px;
+        height: 80px;
+        left: 40px;
+        bottom: 10px;
+      }
+      h3 {
+        font-size: 32px;
+      }
+      p {
+        line-height: 1.8;
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__content {
+    &--ico {
+      width: 22px;
+      height: 22px;
+      border-radius: 100%;
+      border: 1px solid $color-primary;
+      color: $color-primary;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+    }
+    ul {
+      grid-template-columns: 1fr 1fr;
+      display: grid;
+      grid-gap: 15px;
+      @include respond(phone) {
+        grid-template-columns: auto;
+      }
+
+      li {
+        display: grid;
+        align-items: center;
+        grid-gap: 0.5rem;
+        background-color: $color-tertiary;
+        grid-template-columns: auto 1fr;
+        padding: 12px 20px;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+/////  ABOUT 3 DARK VERSION  /////
+.theme-dark {
+  .about3 {
+    background-color: $color-dark-primary;
+    &__content {
+      ul {
+        li {
+          background-color: $color-secondary;
+        }
+      }
+    }
+    &__image__brand {
+      background-color: $color-secondary;
+    }
+  }
+}
